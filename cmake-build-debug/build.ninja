@@ -61,6 +61,12 @@ build CMakeFiles/untitled18.dir/Item.cpp.obj: CXX_COMPILER__untitled18_Debug C$:
   OBJECT_DIR = CMakeFiles\untitled18.dir
   OBJECT_FILE_DIR = CMakeFiles\untitled18.dir
 
+build CMakeFiles/untitled18.dir/list.cpp.obj: CXX_COMPILER__untitled18_Debug C$:/Users/Donat/CLionProjects/untitled18/list.cpp || cmake_object_order_depends_target_untitled18
+  DEP_FILE = CMakeFiles\untitled18.dir\list.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  OBJECT_DIR = CMakeFiles\untitled18.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled18.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target untitled18
@@ -69,7 +75,7 @@ build CMakeFiles/untitled18.dir/Item.cpp.obj: CXX_COMPILER__untitled18_Debug C$:
 #############################################
 # Link the executable untitled18.exe
 
-build untitled18.exe: CXX_EXECUTABLE_LINKER__untitled18_Debug CMakeFiles/untitled18.dir/main.cpp.obj CMakeFiles/untitled18.dir/Item.cpp.obj
+build untitled18.exe: CXX_EXECUTABLE_LINKER__untitled18_Debug CMakeFiles/untitled18.dir/main.cpp.obj CMakeFiles/untitled18.dir/Item.cpp.obj CMakeFiles/untitled18.dir/list.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\untitled18.dir
