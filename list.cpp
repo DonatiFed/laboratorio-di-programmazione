@@ -5,7 +5,7 @@
 #include <map>
 
 #include "List.h"
-
+#include "Subject.h"
 List::List(std::string n) :name(n),totalobjects(0),tobuyobjects(0){
     categories.insert(std::make_pair(1,"Fruit"));
     categories.insert(std::make_pair(2,"Vegetable"));
@@ -25,67 +25,94 @@ List::List(std::string n) :name(n),totalobjects(0),tobuyobjects(0){
     unitiesOfMeasure.insert(std::make_pair(4,"ml"));
     unitiesOfMeasure.insert(std::make_pair(5,"Unities"));
 }
-std::string List::getName() {
-    return name;
-}
+
 void List::setName(std::string name) {
     List::name=name;
 }
-
-void List::addItem() {
-    std::cout<<"Enter the name of the item: "<<std::endl ;
-    std::string n;
-   std::cin>>n;
-    bool categoryselected = false;
-    std::string c;
-    do {
-        std::cout << "select the category for the item: " << std::endl;
-        printCategories();
-        int j;
-        std::cin >> j;
-        if (j <= 0) {
-            std::cout << "select a number higher than 0" << std::endl;
-            continue;
-        }
-        c=categories[j-1];
-        categoryselected = true;
-    } while (!categoryselected);
-
-    std::cout<<"Enter the quantity of the item: "<<std::endl;
-
-    int q;
-    bool quantityselected=false;
-    do {
-        std::cin >> q;
-        if (q <= 0) {
-            std::cout << "Quantity must be a positive number higher than 0" << std::endl;
-            continue;
-        }
-        quantityselected=true;
-    } while (!quantityselected);
-
-bool unityselected= false;
-std::string u;
-do {
-std::cout << "select the unit of measure for the item: " << std::endl;
-printUnitiesOfMeasure();
-int k;
-std::cin >> k;
-if (k <= 0) {
-std::cout << "select a number higher than 0" << std::endl;
-continue;
+std::string List::getName() {
+    return name;
 }
- u=unitiesOfMeasure[k-1];
-unityselected = true;
-} while (!unityselected);
 
-    Item i(n,c,q,u,false);
-    list.insert(std::make_pair(n,i));
-    totalobjects++;
+void List::addItems() {
+    bool done = false;
+    do {
+        std::cout << "Enter the name of an item: " << std::endl;
+        std::string n;
+        std::cin >> n;
+        bool categoryselected = false;
+        std::string c;
+        do {
+            std::cout << "select the category for the item: " << std::endl;
+            printCategories();
+            int j;
+            std::cin >> j;
+            if (j <= 0) {
+                std::cout << "select a number higher than 0" << std::endl;
+                continue;
+            }
+            c = categories[j - 1];
+            categoryselected = true;
+        } while (!categoryselected);
 
-    }
+        std::cout << "Enter the quantity of the item: " << std::endl;
+
+        int q;
+        bool quantityselected = false;
+        do {
+            std::cin >> q;
+            if (q <= 0 ) {
+                std::cout << "Quantity must be a positive number higher than 0" << std::endl;
+                continue;
+            }
+            quantityselected = true;
+        } while (!quantityselected);
+
+        bool unityselected = false;
+        std::string u;
+        do {
+            std::cout << "select the unit of measure for the item: " << std::endl;
+            printUnitiesOfMeasure();
+            int k;
+            std::cin >> k;
+            if (k <= 0 || k > unitiesOfMeasure.size()) {
+                std::cout << "select a number between 0 and" << unitiesOfMeasure.size() << std::endl;
+                continue;
+            }
+
+                u = unitiesOfMeasure[k - 1];
+            unityselected = true;
+        } while (!unityselected);
+
+        Item i(n, c, q, u, false);
+        list.insert(std::make_pair(n, i));
+        totalobjects++;
+        tobuyobjects++;
+        std::cout << "Item added" << std::endl;
+        notify();
+        std::cout << "Do you want to add an item? " << std::endl;
+        std::cout << "1) Yes" << std::endl;
+        std::cout << "2) No" << std::endl;
+        char z;
+        std::cin >> z;
+        switch (z) {
+            case '1':
+                break;
+            case '2':
+                done = true;
+                continue;
+            default:
+                std::cout << "Select a valid number" << std::endl;
+                break;
+        }
+4;
+    }while (!done);
+}
 
 void List::removeItem() {
+    if(list.size()==0){
+        std::cout<<"You don't have any item in the list"<<std::endl;
+        return;
+    }
     std::cout<<"Which item do you want to remove?"<<std::endl;
     printList();
     int choice3;
@@ -104,6 +131,8 @@ void List::removeItem() {
             list.erase(x.first);
             std::cout<<"Item removed"<<std::endl;
             totalobjects--;
+            tobuyobjects--;
+            notify();
             return;
         }
         i++;
@@ -243,6 +272,7 @@ void List::changeBought() {
                 x.second.setBought(true);
                 tobuyobjects--;
                 std::cout<<"Item set to buy"<<std::endl;
+                notify();
                 return;
             }
         }
@@ -271,6 +301,25 @@ void List::printUnitiesOfMeasure() {
 void List::printTotalObjects() {
     std::cout<<"Total objects: "<<totalobjects<<std::endl;
 }
-void List::printtObjectsToBuy() {
+void List::printObjectsToBuy() {
     std::cout<<"Objects to buy: "<<tobuyobjects<<std::endl;
+}
+
+void List::registerObserver(Observer *o) {
+    obs.push_back(o);
+}
+void::List::unregisterObserver(Observer *o) {
+    obs.remove(o);
+}
+void List::notify() {
+    for(auto x:obs){
+        x->update();
+    }
+}
+void List::changeName() {
+    std::cout<<"Enter the new name of the list: "<<std::endl;
+    std::string n;
+    std::cin>>n;
+    name=n;
+    std::cout<<"Name changed"<<std::endl;
 }

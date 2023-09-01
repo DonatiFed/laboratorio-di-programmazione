@@ -1,0 +1,12 @@
+# ninja log v5
+49	607	7151384407938017	CMakeFiles/untitled18.dir/Item.cpp.obj	2128b5ddc51496c
+1	484	7153115315299856	build.ninja	9f68c9b482412d2e
+31	1510	7152460467558964	CMakeFiles/untitled18.dir/ObjectNumberUpdate.cpp.obj	37e57a461e8c6c5e
+7	402	7152462185639140	CMakeFiles/untitled18.dir/main.cpp.obj	48fc746a922b756e
+8	950	7152863287036270	CMakeFiles/untitled18.dir/list.cpp.obj	f951b38fe877b04e
+2	576	7153103929870031	CMakeFiles/untitled18.dir/Test/TestUser.cpp.obj	42440a24b3280b31
+42	1481	7152460467468317	CMakeFiles/untitled18.dir/ObjectToBuyUpdate.cpp.obj	b821b283f9d735c7
+578	961	7153103933654995	untitled18.exe	21589dcdf211b5ee
+19	1059	7152490019339380	CMakeFiles/untitled18.dir/User.cpp.obj	f4ddb383cc60e08d
+4	438	7153115630843351	CMakeFiles/untitled18.dir/Test/TestUser.cpp.obj	42440a24b3280b31
+439	779	7153115634160679	untitled18.exe	21589dcdf211b5ee

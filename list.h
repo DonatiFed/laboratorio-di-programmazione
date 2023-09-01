@@ -8,24 +8,30 @@
 #include <map>
 #include "Item.h"
 #include <vector>
+#include "Subject.h"
+#include <list>
 
 #endif //UNTITLED18_LIST_H
-class List{
+class List: public Subject{
 public:
-    List(std::string n);
+    List(std::string name);
     std::string getName();
     void setName(std::string name);
-    void addItem();
+    void addItems();
     void removeItem();
     void changeQuantity();
     void changeCategory();
     void changeUnitOfMeasure();
     void changeBought();
+    void changeName();
     void printList();
     void printCategories();
     void printUnitiesOfMeasure();
    void printTotalObjects();
-   void printtObjectsToBuy();
+   void printObjectsToBuy();
+   void registerObserver(Observer* o) override;
+    void unregisterObserver(Observer* o) override;
+    void notify() override;
 
 
 private:
@@ -34,9 +40,8 @@ private:
 
     std::map<int,std::string> unitiesOfMeasure;
     std::map<int,std::string> categories;
-
+    std::list<Observer*> obs;
     int totalobjects;
     int tobuyobjects;
-
 
 };
