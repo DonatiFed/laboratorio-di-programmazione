@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug/Test/cmake_install.cmake")
+  include("C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug/test/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

@@ -11,7 +11,7 @@
 #include "List.h"
 class User{
 public:
-    User();
+    User(std::string n);
     std::map <std::string,List*> getLists();
     std::string getName();
     void setName(std::string name);
@@ -21,7 +21,7 @@ public:
     void removeList();
     void printLists();
     List* selectList();
-    void listActions(List* list);
+
 
 private:
     std::string name;

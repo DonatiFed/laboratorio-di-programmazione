@@ -5,11 +5,7 @@
 
 #include <iostream>
 
-User::User(){
-    std::cout<<"Enter Username: "<<std::endl;
-    std::string n;
-    std::cin>>n;
-    name=n;
+User::User(std::string n):name(n) {
 }
 void User::setName(std::string name) {
     this->name=name;
@@ -102,48 +98,4 @@ List* User::selectList() {
         i++;
     }
     }while(!listselected);
-}
-void User::listActions(List* list) {
-    bool continueiteration=true;
-    char choice;
-    do {
-        std::cout << "What would you like to do?" << std::endl;
-        std::cout << "1) Add an item" << std::endl;
-        std::cout << "2) Remove an item" << std::endl;
-        std::cout<<"3) Change category of an item"<<std::endl;
-        std::cout<<"4) Change quantity of an item"<<std::endl;
-        std::cout<<"5) mark an object as bought/to buy"<<std::endl;
-        std::cout << "6) Change name" << std::endl;
-        std::cout<<"7) Exit"<<std::endl;
-
-        std::cin >> choice;
-        switch (choice) {
-            case '1':
-                list->addItems();
-                break;
-            case '2':
-                list->removeItem();
-                break;
-            case '3':
-                list->changeCategory();
-                break;
-                case '4':
-                list->changeQuantity();
-               list->changeUnitOfMeasure();
-                break;
-                case '5':
-                list->changeBought();
-                break;
-            case '6':
-                list->changeName();
-                break;
-
-            case '7':
-                continueiteration = false;
-                break;
-            default:
-                std::cout << "Select a number between 1 and 5" << std::endl;
-                break;
-        }
-    }while(continueiteration);
 }

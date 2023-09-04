@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: untitled18
+# Project: untitled_18
 # Configurations: Debug
 # =============================================================================
 
@@ -41,73 +41,92 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/Donat/CLionProjects/untitled18/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target untitled18
+# Object build statements for EXECUTABLE target untitled_18
 
 
 #############################################
-# Order-only phony target for untitled18
+# Order-only phony target for untitled_18
 
-build cmake_object_order_depends_target_untitled18: phony || CMakeFiles/untitled18.dir
+build cmake_object_order_depends_target_untitled_18: phony || cmake_object_order_depends_target_core
 
-build CMakeFiles/untitled18.dir/main.cpp.obj: CXX_COMPILER__untitled18_Debug C$:/Users/Donat/CLionProjects/untitled18/main.cpp || cmake_object_order_depends_target_untitled18
-  DEP_FILE = CMakeFiles\untitled18.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++11
-  OBJECT_DIR = CMakeFiles\untitled18.dir
-  OBJECT_FILE_DIR = CMakeFiles\untitled18.dir
-
-build CMakeFiles/untitled18.dir/Item.cpp.obj: CXX_COMPILER__untitled18_Debug C$:/Users/Donat/CLionProjects/untitled18/Item.cpp || cmake_object_order_depends_target_untitled18
-  DEP_FILE = CMakeFiles\untitled18.dir\Item.cpp.obj.d
-  FLAGS = -g -std=gnu++11
-  OBJECT_DIR = CMakeFiles\untitled18.dir
-  OBJECT_FILE_DIR = CMakeFiles\untitled18.dir
-
-build CMakeFiles/untitled18.dir/list.cpp.obj: CXX_COMPILER__untitled18_Debug C$:/Users/Donat/CLionProjects/untitled18/list.cpp || cmake_object_order_depends_target_untitled18
-  DEP_FILE = CMakeFiles\untitled18.dir\list.cpp.obj.d
-  FLAGS = -g -std=gnu++11
-  OBJECT_DIR = CMakeFiles\untitled18.dir
-  OBJECT_FILE_DIR = CMakeFiles\untitled18.dir
-
-build CMakeFiles/untitled18.dir/ObjectNumberUpdate.cpp.obj: CXX_COMPILER__untitled18_Debug C$:/Users/Donat/CLionProjects/untitled18/ObjectNumberUpdate.cpp || cmake_object_order_depends_target_untitled18
-  DEP_FILE = CMakeFiles\untitled18.dir\ObjectNumberUpdate.cpp.obj.d
-  FLAGS = -g -std=gnu++11
-  OBJECT_DIR = CMakeFiles\untitled18.dir
-  OBJECT_FILE_DIR = CMakeFiles\untitled18.dir
-
-build CMakeFiles/untitled18.dir/ObjectToBuyUpdate.cpp.obj: CXX_COMPILER__untitled18_Debug C$:/Users/Donat/CLionProjects/untitled18/ObjectToBuyUpdate.cpp || cmake_object_order_depends_target_untitled18
-  DEP_FILE = CMakeFiles\untitled18.dir\ObjectToBuyUpdate.cpp.obj.d
-  FLAGS = -g -std=gnu++11
-  OBJECT_DIR = CMakeFiles\untitled18.dir
-  OBJECT_FILE_DIR = CMakeFiles\untitled18.dir
-
-build CMakeFiles/untitled18.dir/User.cpp.obj: CXX_COMPILER__untitled18_Debug C$:/Users/Donat/CLionProjects/untitled18/User.cpp || cmake_object_order_depends_target_untitled18
-  DEP_FILE = CMakeFiles\untitled18.dir\User.cpp.obj.d
-  FLAGS = -g -std=gnu++11
-  OBJECT_DIR = CMakeFiles\untitled18.dir
-  OBJECT_FILE_DIR = CMakeFiles\untitled18.dir
-
-build CMakeFiles/untitled18.dir/Test/TestUser.cpp.obj: CXX_COMPILER__untitled18_Debug C$:/Users/Donat/CLionProjects/untitled18/Test/TestUser.cpp || cmake_object_order_depends_target_untitled18
-  DEP_FILE = CMakeFiles\untitled18.dir\Test\TestUser.cpp.obj.d
-  FLAGS = -g -std=gnu++11
-  OBJECT_DIR = CMakeFiles\untitled18.dir
-  OBJECT_FILE_DIR = CMakeFiles\untitled18.dir\Test
+build CMakeFiles/untitled_18.dir/main.cpp.obj: CXX_COMPILER__untitled_18_Debug C$:/Users/Donat/CLionProjects/untitled18/main.cpp || cmake_object_order_depends_target_untitled_18
+  DEP_FILE = CMakeFiles\untitled_18.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\untitled_18.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled_18.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target untitled18
+# Link build statements for EXECUTABLE target untitled_18
 
 
 #############################################
-# Link the executable untitled18.exe
+# Link the executable untitled_18.exe
 
-build untitled18.exe: CXX_EXECUTABLE_LINKER__untitled18_Debug CMakeFiles/untitled18.dir/main.cpp.obj CMakeFiles/untitled18.dir/Item.cpp.obj CMakeFiles/untitled18.dir/list.cpp.obj CMakeFiles/untitled18.dir/ObjectNumberUpdate.cpp.obj CMakeFiles/untitled18.dir/ObjectToBuyUpdate.cpp.obj CMakeFiles/untitled18.dir/User.cpp.obj CMakeFiles/untitled18.dir/Test/TestUser.cpp.obj
+build untitled_18.exe: CXX_EXECUTABLE_LINKER__untitled_18_Debug CMakeFiles/untitled_18.dir/main.cpp.obj | libcore.a || libcore.a
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\untitled18.dir
+  LINK_LIBRARIES = libcore.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\untitled_18.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = untitled18.exe
-  TARGET_IMPLIB = libuntitled18.dll.a
-  TARGET_PDB = untitled18.exe.dbg
+  TARGET_FILE = untitled_18.exe
+  TARGET_IMPLIB = libuntitled_18.dll.a
+  TARGET_PDB = untitled_18.exe.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target core
+
+
+#############################################
+# Order-only phony target for core
+
+build cmake_object_order_depends_target_core: phony || CMakeFiles/core.dir
+
+build CMakeFiles/core.dir/User.cpp.obj: CXX_COMPILER__core_Debug C$:/Users/Donat/CLionProjects/untitled18/User.cpp || cmake_object_order_depends_target_core
+  DEP_FILE = CMakeFiles\core.dir\User.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\core.dir
+  OBJECT_FILE_DIR = CMakeFiles\core.dir
+
+build CMakeFiles/core.dir/Item.cpp.obj: CXX_COMPILER__core_Debug C$:/Users/Donat/CLionProjects/untitled18/Item.cpp || cmake_object_order_depends_target_core
+  DEP_FILE = CMakeFiles\core.dir\Item.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\core.dir
+  OBJECT_FILE_DIR = CMakeFiles\core.dir
+
+build CMakeFiles/core.dir/ObjectNumberUpdate.cpp.obj: CXX_COMPILER__core_Debug C$:/Users/Donat/CLionProjects/untitled18/ObjectNumberUpdate.cpp || cmake_object_order_depends_target_core
+  DEP_FILE = CMakeFiles\core.dir\ObjectNumberUpdate.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\core.dir
+  OBJECT_FILE_DIR = CMakeFiles\core.dir
+
+build CMakeFiles/core.dir/ObjectToBuyUpdate.cpp.obj: CXX_COMPILER__core_Debug C$:/Users/Donat/CLionProjects/untitled18/ObjectToBuyUpdate.cpp || cmake_object_order_depends_target_core
+  DEP_FILE = CMakeFiles\core.dir\ObjectToBuyUpdate.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\core.dir
+  OBJECT_FILE_DIR = CMakeFiles\core.dir
+
+build CMakeFiles/core.dir/list.cpp.obj: CXX_COMPILER__core_Debug C$:/Users/Donat/CLionProjects/untitled18/list.cpp || cmake_object_order_depends_target_core
+  DEP_FILE = CMakeFiles\core.dir\list.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\core.dir
+  OBJECT_FILE_DIR = CMakeFiles\core.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target core
+
+
+#############################################
+# Link the static library libcore.a
+
+build libcore.a: CXX_STATIC_LIBRARY_LINKER__core_Debug CMakeFiles/core.dir/User.cpp.obj CMakeFiles/core.dir/Item.cpp.obj CMakeFiles/core.dir/ObjectNumberUpdate.cpp.obj CMakeFiles/core.dir/ObjectToBuyUpdate.cpp.obj CMakeFiles/core.dir/list.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles\core.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = libcore.a
+  TARGET_PDB = core.a.dbg
 
 
 #############################################
@@ -186,14 +205,21 @@ build install/strip: phony CMakeFiles/install/strip.util
 #############################################
 # Order-only phony target for runTests
 
-build cmake_object_order_depends_target_runTests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+build cmake_object_order_depends_target_runTests: phony || cmake_object_order_depends_target_core cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
 
-build Test/CMakeFiles/runTests.dir/TestUser.cpp.obj: CXX_COMPILER__runTests_Debug C$:/Users/Donat/CLionProjects/untitled18/Test/TestUser.cpp || cmake_object_order_depends_target_runTests
-  DEP_FILE = Test\CMakeFiles\runTests.dir\TestUser.cpp.obj.d
+build test/CMakeFiles/runTests.dir/runAllTests.cpp.obj: CXX_COMPILER__runTests_Debug C$:/Users/Donat/CLionProjects/untitled18/test/runAllTests.cpp || cmake_object_order_depends_target_runTests
+  DEP_FILE = test\CMakeFiles\runTests.dir\runAllTests.cpp.obj.d
   FLAGS = -g -std=gnu++14
-  INCLUDES = -isystem C:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest/googletest/include -isystem C:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest/googletest
-  OBJECT_DIR = Test\CMakeFiles\runTests.dir
-  OBJECT_FILE_DIR = Test\CMakeFiles\runTests.dir
+  INCLUDES = -isystem C:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googletest/include -isystem C:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googletest
+  OBJECT_DIR = test\CMakeFiles\runTests.dir
+  OBJECT_FILE_DIR = test\CMakeFiles\runTests.dir
+
+build test/CMakeFiles/runTests.dir/TestUser.cpp.obj: CXX_COMPILER__runTests_Debug C$:/Users/Donat/CLionProjects/untitled18/test/TestUser.cpp || cmake_object_order_depends_target_runTests
+  DEP_FILE = test\CMakeFiles\runTests.dir\TestUser.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -isystem C:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googletest/include -isystem C:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googletest
+  OBJECT_DIR = test\CMakeFiles\runTests.dir
+  OBJECT_FILE_DIR = test\CMakeFiles\runTests.dir
 
 
 # =============================================================================
@@ -201,156 +227,156 @@ build Test/CMakeFiles/runTests.dir/TestUser.cpp.obj: CXX_COMPILER__runTests_Debu
 
 
 #############################################
-# Link the executable Test\runTests.exe
+# Link the executable test\runTests.exe
 
-build Test/runTests.exe: CXX_EXECUTABLE_LINKER__runTests_Debug Test/CMakeFiles/runTests.dir/TestUser.cpp.obj | lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+build test/runTests.exe: CXX_EXECUTABLE_LINKER__runTests_Debug test/CMakeFiles/runTests.dir/runAllTests.cpp.obj test/CMakeFiles/runTests.dir/TestUser.cpp.obj | lib/libgtest.a lib/libgtest_main.a libcore.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a libcore.a
   FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = Test\CMakeFiles\runTests.dir
+  LINK_LIBRARIES = lib/libgtest.a  lib/libgtest_main.a  libcore.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = test\CMakeFiles\runTests.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = Test\runTests.exe
-  TARGET_IMPLIB = Test\librunTests.dll.a
+  TARGET_FILE = test\runTests.exe
+  TARGET_IMPLIB = test\librunTests.dll.a
   TARGET_PDB = runTests.exe.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
-build Test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\Test && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\test && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build Test/edit_cache: phony Test/CMakeFiles/edit_cache.util
+build test/edit_cache: phony test/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build Test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\Test && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Donat\CLionProjects\untitled18 -BC:\Users\Donat\CLionProjects\untitled18\cmake-build-debug"
+build test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\test && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Donat\CLionProjects\untitled18 -BC:\Users\Donat\CLionProjects\untitled18\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build Test/rebuild_cache: phony Test/CMakeFiles/rebuild_cache.util
+build test/rebuild_cache: phony test/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build Test/list_install_components: phony
+build test/list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build Test/CMakeFiles/install.util: CUSTOM_COMMAND Test/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\Test && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+build test/CMakeFiles/install.util: CUSTOM_COMMAND test/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\test && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build Test/install: phony Test/CMakeFiles/install.util
+build test/install: phony test/CMakeFiles/install.util
 
 
 #############################################
 # Utility command for install/local
 
-build Test/CMakeFiles/install/local.util: CUSTOM_COMMAND Test/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\Test && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build test/CMakeFiles/install/local.util: CUSTOM_COMMAND test/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\test && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build Test/install/local: phony Test/CMakeFiles/install/local.util
+build test/install/local: phony test/CMakeFiles/install/local.util
 
 
 #############################################
 # Utility command for install/strip
 
-build Test/CMakeFiles/install/strip.util: CUSTOM_COMMAND Test/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\Test && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+build test/CMakeFiles/install/strip.util: CUSTOM_COMMAND test/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\test && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
 
-build Test/install/strip: phony Test/CMakeFiles/install/strip.util
+build test/install/strip: phony test/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Donat/CLionProjects/untitled18/Test/CMakeLists.txt
+# C:/Users/Donat/CLionProjects/untitled18/test/CMakeLists.txt
 # =============================================================================
 
 
 #############################################
 # Utility command for edit_cache
 
-build Test/lib/gtest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\Test\lib\gtest && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build test/lib/gtest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\test\lib\gtest && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build Test/lib/gtest/edit_cache: phony Test/lib/gtest/CMakeFiles/edit_cache.util
+build test/lib/gtest/edit_cache: phony test/lib/gtest/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build Test/lib/gtest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\Test\lib\gtest && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Donat\CLionProjects\untitled18 -BC:\Users\Donat\CLionProjects\untitled18\cmake-build-debug"
+build test/lib/gtest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\test\lib\gtest && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Donat\CLionProjects\untitled18 -BC:\Users\Donat\CLionProjects\untitled18\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build Test/lib/gtest/rebuild_cache: phony Test/lib/gtest/CMakeFiles/rebuild_cache.util
+build test/lib/gtest/rebuild_cache: phony test/lib/gtest/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build Test/lib/gtest/list_install_components: phony
+build test/lib/gtest/list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build Test/lib/gtest/CMakeFiles/install.util: CUSTOM_COMMAND Test/lib/gtest/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\Test\lib\gtest && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+build test/lib/gtest/CMakeFiles/install.util: CUSTOM_COMMAND test/lib/gtest/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\test\lib\gtest && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build Test/lib/gtest/install: phony Test/lib/gtest/CMakeFiles/install.util
+build test/lib/gtest/install: phony test/lib/gtest/CMakeFiles/install.util
 
 
 #############################################
 # Utility command for install/local
 
-build Test/lib/gtest/CMakeFiles/install/local.util: CUSTOM_COMMAND Test/lib/gtest/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\Test\lib\gtest && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build test/lib/gtest/CMakeFiles/install/local.util: CUSTOM_COMMAND test/lib/gtest/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\test\lib\gtest && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build Test/lib/gtest/install/local: phony Test/lib/gtest/CMakeFiles/install/local.util
+build test/lib/gtest/install/local: phony test/lib/gtest/CMakeFiles/install/local.util
 
 
 #############################################
 # Utility command for install/strip
 
-build Test/lib/gtest/CMakeFiles/install/strip.util: CUSTOM_COMMAND Test/lib/gtest/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\Test\lib\gtest && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+build test/lib/gtest/CMakeFiles/install/strip.util: CUSTOM_COMMAND test/lib/gtest/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\test\lib\gtest && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
 
-build Test/lib/gtest/install/strip: phony Test/lib/gtest/CMakeFiles/install/strip.util
+build test/lib/gtest/install/strip: phony test/lib/gtest/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest/CMakeLists.txt
+# C:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -362,12 +388,12 @@ build Test/lib/gtest/install/strip: phony Test/lib/gtest/CMakeFiles/install/stri
 
 build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depends_target_gtest
 
-build Test/lib/gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_COMPILER__gmock_Debug C$:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
-  DEP_FILE = Test\lib\gtest\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj.d
+build test/lib/gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_COMPILER__gmock_Debug C$:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
+  DEP_FILE = test\lib\gtest\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj.d
   FLAGS = -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14
-  INCLUDES = -IC:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest/googlemock/include -IC:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest/googlemock -isystem C:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest/googletest/include -isystem C:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest/googletest
-  OBJECT_DIR = Test\lib\gtest\googlemock\CMakeFiles\gmock.dir
-  OBJECT_FILE_DIR = Test\lib\gtest\googlemock\CMakeFiles\gmock.dir\src
+  INCLUDES = -IC:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googlemock/include -IC:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googlemock -isystem C:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googletest/include -isystem C:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googletest
+  OBJECT_DIR = test\lib\gtest\googlemock\CMakeFiles\gmock.dir
+  OBJECT_FILE_DIR = test\lib\gtest\googlemock\CMakeFiles\gmock.dir\src
 
 
 # =============================================================================
@@ -377,9 +403,9 @@ build Test/lib/gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_C
 #############################################
 # Link the static library lib\libgmock.a
 
-build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug Test/lib/gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj || lib/libgtest.a
+build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug test/lib/gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj || lib/libgtest.a
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = Test\lib\gtest\googlemock\CMakeFiles\gmock.dir
+  OBJECT_DIR = test\lib\gtest\googlemock\CMakeFiles\gmock.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
   TARGET_FILE = lib\libgmock.a
@@ -394,12 +420,12 @@ build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug Test/lib/gtest/goog
 
 build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
 
-build Test/lib/gtest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: CXX_COMPILER__gmock_main_Debug C$:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
-  DEP_FILE = Test\lib\gtest\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj.d
+build test/lib/gtest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: CXX_COMPILER__gmock_main_Debug C$:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
+  DEP_FILE = test\lib\gtest\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj.d
   FLAGS = -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14
-  INCLUDES = -isystem C:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest/googlemock/include -isystem C:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest/googlemock -isystem C:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest/googletest/include -isystem C:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest/googletest
-  OBJECT_DIR = Test\lib\gtest\googlemock\CMakeFiles\gmock_main.dir
-  OBJECT_FILE_DIR = Test\lib\gtest\googlemock\CMakeFiles\gmock_main.dir\src
+  INCLUDES = -isystem C:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googlemock/include -isystem C:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googlemock -isystem C:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googletest/include -isystem C:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googletest
+  OBJECT_DIR = test\lib\gtest\googlemock\CMakeFiles\gmock_main.dir
+  OBJECT_FILE_DIR = test\lib\gtest\googlemock\CMakeFiles\gmock_main.dir\src
 
 
 # =============================================================================
@@ -409,9 +435,9 @@ build Test/lib/gtest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj:
 #############################################
 # Link the static library lib\libgmock_main.a
 
-build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug Test/lib/gtest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj || lib/libgmock.a lib/libgtest.a
+build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug test/lib/gtest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj || lib/libgmock.a lib/libgtest.a
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = Test\lib\gtest\googlemock\CMakeFiles\gmock_main.dir
+  OBJECT_DIR = test\lib\gtest\googlemock\CMakeFiles\gmock_main.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
   TARGET_FILE = lib\libgmock_main.a
@@ -421,70 +447,70 @@ build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug Test/lib/
 #############################################
 # Utility command for edit_cache
 
-build Test/lib/gtest/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\Test\lib\gtest\googlemock && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build test/lib/gtest/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\test\lib\gtest\googlemock && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build Test/lib/gtest/googlemock/edit_cache: phony Test/lib/gtest/googlemock/CMakeFiles/edit_cache.util
+build test/lib/gtest/googlemock/edit_cache: phony test/lib/gtest/googlemock/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build Test/lib/gtest/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\Test\lib\gtest\googlemock && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Donat\CLionProjects\untitled18 -BC:\Users\Donat\CLionProjects\untitled18\cmake-build-debug"
+build test/lib/gtest/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\test\lib\gtest\googlemock && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Donat\CLionProjects\untitled18 -BC:\Users\Donat\CLionProjects\untitled18\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build Test/lib/gtest/googlemock/rebuild_cache: phony Test/lib/gtest/googlemock/CMakeFiles/rebuild_cache.util
+build test/lib/gtest/googlemock/rebuild_cache: phony test/lib/gtest/googlemock/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build Test/lib/gtest/googlemock/list_install_components: phony
+build test/lib/gtest/googlemock/list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build Test/lib/gtest/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND Test/lib/gtest/googlemock/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\Test\lib\gtest\googlemock && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+build test/lib/gtest/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND test/lib/gtest/googlemock/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\test\lib\gtest\googlemock && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build Test/lib/gtest/googlemock/install: phony Test/lib/gtest/googlemock/CMakeFiles/install.util
+build test/lib/gtest/googlemock/install: phony test/lib/gtest/googlemock/CMakeFiles/install.util
 
 
 #############################################
 # Utility command for install/local
 
-build Test/lib/gtest/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND Test/lib/gtest/googlemock/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\Test\lib\gtest\googlemock && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build test/lib/gtest/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND test/lib/gtest/googlemock/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\test\lib\gtest\googlemock && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build Test/lib/gtest/googlemock/install/local: phony Test/lib/gtest/googlemock/CMakeFiles/install/local.util
+build test/lib/gtest/googlemock/install/local: phony test/lib/gtest/googlemock/CMakeFiles/install/local.util
 
 
 #############################################
 # Utility command for install/strip
 
-build Test/lib/gtest/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND Test/lib/gtest/googlemock/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\Test\lib\gtest\googlemock && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+build test/lib/gtest/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND test/lib/gtest/googlemock/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\test\lib\gtest\googlemock && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
 
-build Test/lib/gtest/googlemock/install/strip: phony Test/lib/gtest/googlemock/CMakeFiles/install/strip.util
+build test/lib/gtest/googlemock/install/strip: phony test/lib/gtest/googlemock/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest/googlemock/CMakeLists.txt
+# C:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googlemock/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -494,14 +520,14 @@ build Test/lib/gtest/googlemock/install/strip: phony Test/lib/gtest/googlemock/C
 #############################################
 # Order-only phony target for gtest
 
-build cmake_object_order_depends_target_gtest: phony || Test/lib/gtest/googletest/CMakeFiles/gtest.dir
+build cmake_object_order_depends_target_gtest: phony || test/lib/gtest/googletest/CMakeFiles/gtest.dir
 
-build Test/lib/gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_COMPILER__gtest_Debug C$:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
-  DEP_FILE = Test\lib\gtest\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj.d
+build test/lib/gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_COMPILER__gtest_Debug C$:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
+  DEP_FILE = test\lib\gtest\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj.d
   FLAGS = -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14
-  INCLUDES = -IC:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest/googletest/include -IC:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest/googletest
-  OBJECT_DIR = Test\lib\gtest\googletest\CMakeFiles\gtest.dir
-  OBJECT_FILE_DIR = Test\lib\gtest\googletest\CMakeFiles\gtest.dir\src
+  INCLUDES = -IC:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googletest/include -IC:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googletest
+  OBJECT_DIR = test\lib\gtest\googletest\CMakeFiles\gtest.dir
+  OBJECT_FILE_DIR = test\lib\gtest\googletest\CMakeFiles\gtest.dir\src
 
 
 # =============================================================================
@@ -511,9 +537,9 @@ build Test/lib/gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_C
 #############################################
 # Link the static library lib\libgtest.a
 
-build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug Test/lib/gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj
+build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug test/lib/gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = Test\lib\gtest\googletest\CMakeFiles\gtest.dir
+  OBJECT_DIR = test\lib\gtest\googletest\CMakeFiles\gtest.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
   TARGET_FILE = lib\libgtest.a
@@ -528,12 +554,12 @@ build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug Test/lib/gtest/goog
 
 build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
 
-build Test/lib/gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: CXX_COMPILER__gtest_main_Debug C$:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
-  DEP_FILE = Test\lib\gtest\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d
+build test/lib/gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: CXX_COMPILER__gtest_main_Debug C$:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
+  DEP_FILE = test\lib\gtest\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d
   FLAGS = -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14
-  INCLUDES = -isystem C:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest/googletest/include -isystem C:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest/googletest
-  OBJECT_DIR = Test\lib\gtest\googletest\CMakeFiles\gtest_main.dir
-  OBJECT_FILE_DIR = Test\lib\gtest\googletest\CMakeFiles\gtest_main.dir\src
+  INCLUDES = -isystem C:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googletest/include -isystem C:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googletest
+  OBJECT_DIR = test\lib\gtest\googletest\CMakeFiles\gtest_main.dir
+  OBJECT_FILE_DIR = test\lib\gtest\googletest\CMakeFiles\gtest_main.dir\src
 
 
 # =============================================================================
@@ -543,9 +569,9 @@ build Test/lib/gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj:
 #############################################
 # Link the static library lib\libgtest_main.a
 
-build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug Test/lib/gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj || lib/libgtest.a
+build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug test/lib/gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj || lib/libgtest.a
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = Test\lib\gtest\googletest\CMakeFiles\gtest_main.dir
+  OBJECT_DIR = test\lib\gtest\googletest\CMakeFiles\gtest_main.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
   TARGET_FILE = lib\libgtest_main.a
@@ -555,69 +581,71 @@ build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug Test/lib/
 #############################################
 # Utility command for edit_cache
 
-build Test/lib/gtest/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\Test\lib\gtest\googletest && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build test/lib/gtest/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\test\lib\gtest\googletest && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build Test/lib/gtest/googletest/edit_cache: phony Test/lib/gtest/googletest/CMakeFiles/edit_cache.util
+build test/lib/gtest/googletest/edit_cache: phony test/lib/gtest/googletest/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build Test/lib/gtest/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\Test\lib\gtest\googletest && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Donat\CLionProjects\untitled18 -BC:\Users\Donat\CLionProjects\untitled18\cmake-build-debug"
+build test/lib/gtest/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\test\lib\gtest\googletest && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Donat\CLionProjects\untitled18 -BC:\Users\Donat\CLionProjects\untitled18\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build Test/lib/gtest/googletest/rebuild_cache: phony Test/lib/gtest/googletest/CMakeFiles/rebuild_cache.util
+build test/lib/gtest/googletest/rebuild_cache: phony test/lib/gtest/googletest/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build Test/lib/gtest/googletest/list_install_components: phony
+build test/lib/gtest/googletest/list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build Test/lib/gtest/googletest/CMakeFiles/install.util: CUSTOM_COMMAND Test/lib/gtest/googletest/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\Test\lib\gtest\googletest && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+build test/lib/gtest/googletest/CMakeFiles/install.util: CUSTOM_COMMAND test/lib/gtest/googletest/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\test\lib\gtest\googletest && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build Test/lib/gtest/googletest/install: phony Test/lib/gtest/googletest/CMakeFiles/install.util
+build test/lib/gtest/googletest/install: phony test/lib/gtest/googletest/CMakeFiles/install.util
 
 
 #############################################
 # Utility command for install/local
 
-build Test/lib/gtest/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND Test/lib/gtest/googletest/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\Test\lib\gtest\googletest && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build test/lib/gtest/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND test/lib/gtest/googletest/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\test\lib\gtest\googletest && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build Test/lib/gtest/googletest/install/local: phony Test/lib/gtest/googletest/CMakeFiles/install/local.util
+build test/lib/gtest/googletest/install/local: phony test/lib/gtest/googletest/CMakeFiles/install/local.util
 
 
 #############################################
 # Utility command for install/strip
 
-build Test/lib/gtest/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND Test/lib/gtest/googletest/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\Test\lib\gtest\googletest && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+build test/lib/gtest/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND test/lib/gtest/googletest/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\Donat\CLionProjects\untitled18\cmake-build-debug\test\lib\gtest\googletest && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
 
-build Test/lib/gtest/googletest/install/strip: phony Test/lib/gtest/googletest/CMakeFiles/install/strip.util
+build test/lib/gtest/googletest/install/strip: phony test/lib/gtest/googletest/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Target aliases.
+
+build core: phony libcore.a
 
 build gmock: phony lib/libgmock.a
 
@@ -635,11 +663,11 @@ build libgtest.a: phony lib/libgtest.a
 
 build libgtest_main.a: phony lib/libgtest_main.a
 
-build runTests: phony Test/runTests.exe
+build runTests: phony test/runTests.exe
 
-build runTests.exe: phony Test/runTests.exe
+build runTests.exe: phony test/runTests.exe
 
-build untitled18: phony untitled18.exe
+build untitled_18: phony untitled_18.exe
 
 # =============================================================================
 # Folder targets.
@@ -649,35 +677,35 @@ build untitled18: phony untitled18.exe
 #############################################
 # Folder: C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug
 
-build all: phony untitled18.exe Test/all
+build all: phony untitled_18.exe libcore.a test/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug/Test
+# Folder: C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug/test
 
-build Test/all: phony Test/runTests.exe Test/lib/gtest/all
-
-# =============================================================================
-
-#############################################
-# Folder: C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug/Test/lib/gtest
-
-build Test/lib/gtest/all: phony Test/lib/gtest/googlemock/all
+build test/all: phony test/runTests.exe test/lib/gtest/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug/Test/lib/gtest/googlemock
+# Folder: C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug/test/lib/gtest
 
-build Test/lib/gtest/googlemock/all: phony lib/libgmock.a lib/libgmock_main.a Test/lib/gtest/googletest/all
+build test/lib/gtest/all: phony test/lib/gtest/googlemock/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug/Test/lib/gtest/googletest
+# Folder: C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug/test/lib/gtest/googlemock
 
-build Test/lib/gtest/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
+build test/lib/gtest/googlemock/all: phony lib/libgmock.a lib/libgmock_main.a test/lib/gtest/googletest/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug/test/lib/gtest/googletest
+
+build test/lib/gtest/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 
 # =============================================================================
 # Built-in targets
@@ -686,14 +714,14 @@ build Test/lib/gtest/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../Test/CMakeLists.txt ../Test/lib/gtest/CMakeLists.txt ../Test/lib/gtest/googlemock/CMakeLists.txt ../Test/lib/gtest/googlemock/cmake/gmock.pc.in ../Test/lib/gtest/googlemock/cmake/gmock_main.pc.in ../Test/lib/gtest/googletest/CMakeLists.txt ../Test/lib/gtest/googletest/cmake/Config.cmake.in ../Test/lib/gtest/googletest/cmake/gtest.pc.in ../Test/lib/gtest/googletest/cmake/gtest_main.pc.in ../Test/lib/gtest/googletest/cmake/internal_utils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPython.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPython/Support.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeRCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../test/CMakeLists.txt ../test/lib/gtest/CMakeLists.txt ../test/lib/gtest/googlemock/CMakeLists.txt ../test/lib/gtest/googlemock/cmake/gmock.pc.in ../test/lib/gtest/googlemock/cmake/gmock_main.pc.in ../test/lib/gtest/googletest/CMakeLists.txt ../test/lib/gtest/googletest/cmake/Config.cmake.in ../test/lib/gtest/googletest/cmake/gtest.pc.in ../test/lib/gtest/googletest/cmake/gtest_main.pc.in ../test/lib/gtest/googletest/cmake/internal_utils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPython.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPython/Support.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeRCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../Test/CMakeLists.txt ../Test/lib/gtest/CMakeLists.txt ../Test/lib/gtest/googlemock/CMakeLists.txt ../Test/lib/gtest/googlemock/cmake/gmock.pc.in ../Test/lib/gtest/googlemock/cmake/gmock_main.pc.in ../Test/lib/gtest/googletest/CMakeLists.txt ../Test/lib/gtest/googletest/cmake/Config.cmake.in ../Test/lib/gtest/googletest/cmake/gtest.pc.in ../Test/lib/gtest/googletest/cmake/gtest_main.pc.in ../Test/lib/gtest/googletest/cmake/internal_utils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPython.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPython/Support.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeRCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../test/CMakeLists.txt ../test/lib/gtest/CMakeLists.txt ../test/lib/gtest/googlemock/CMakeLists.txt ../test/lib/gtest/googlemock/cmake/gmock.pc.in ../test/lib/gtest/googlemock/cmake/gmock_main.pc.in ../test/lib/gtest/googletest/CMakeLists.txt ../test/lib/gtest/googletest/cmake/Config.cmake.in ../test/lib/gtest/googletest/cmake/gtest.pc.in ../test/lib/gtest/googletest/cmake/gtest_main.pc.in ../test/lib/gtest/googletest/cmake/internal_utils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPython.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPython/Support.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeRCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
 
 
 #############################################

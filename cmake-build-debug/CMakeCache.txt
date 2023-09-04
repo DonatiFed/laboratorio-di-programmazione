@@ -202,7 +202,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=untitled18
+CMAKE_PROJECT_NAME:STATIC=untitled_18
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.14.0
@@ -344,7 +344,7 @@ Untitled18_IS_TOP_LEVEL:STATIC=OFF
 Untitled18_SOURCE_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18/Test
 
 //Value Computed by CMake
-gmock_BINARY_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug/Test/lib/gtest/googlemock
+gmock_BINARY_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug/test/lib/gtest/googlemock
 
 //Value Computed by CMake
 gmock_IS_TOP_LEVEL:STATIC=OFF
@@ -353,7 +353,7 @@ gmock_IS_TOP_LEVEL:STATIC=OFF
 gmock_LIB_DEPENDS:STATIC=general;gtest;
 
 //Value Computed by CMake
-gmock_SOURCE_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest/googlemock
+gmock_SOURCE_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googlemock
 
 //Build all of Google Mock's own tests.
 gmock_build_tests:BOOL=OFF
@@ -362,22 +362,22 @@ gmock_build_tests:BOOL=OFF
 gmock_main_LIB_DEPENDS:STATIC=general;gmock;
 
 //Value Computed by CMake
-googletest-distribution_BINARY_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug/Test/lib/gtest
+googletest-distribution_BINARY_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug/test/lib/gtest
 
 //Value Computed by CMake
 googletest-distribution_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-googletest-distribution_SOURCE_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest
+googletest-distribution_SOURCE_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18/test/lib/gtest
 
 //Value Computed by CMake
-gtest_BINARY_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug/Test/lib/gtest/googletest
+gtest_BINARY_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug/test/lib/gtest/googletest
 
 //Value Computed by CMake
 gtest_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-gtest_SOURCE_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18/Test/lib/gtest/googletest
+gtest_SOURCE_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18/test/lib/gtest/googletest
 
 //Build gtest's sample programs.
 gtest_build_samples:BOOL=OFF
@@ -399,6 +399,33 @@ gtest_hide_internal_symbols:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 
 //Value Computed by CMake
+unit_testing_BINARY_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug
+
+//Value Computed by CMake
+unit_testing_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+unit_testing_SOURCE_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18
+
+//Value Computed by CMake
+untitl_BINARY_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug
+
+//Value Computed by CMake
+untitl_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+untitl_SOURCE_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18
+
+//Value Computed by CMake
+untitle_BINARY_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug
+
+//Value Computed by CMake
+untitle_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+untitle_SOURCE_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18
+
+//Value Computed by CMake
 untitled18_BINARY_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug
 
 //Value Computed by CMake
@@ -406,6 +433,24 @@ untitled18_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 untitled18_SOURCE_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18
+
+//Value Computed by CMake
+untitled_18_BINARY_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug
+
+//Value Computed by CMake
+untitled_18_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+untitled_18_SOURCE_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18
+
+//Value Computed by CMake
+untitled_BINARY_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug
+
+//Value Computed by CMake
+untitled_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+untitled_SOURCE_DIR:STATIC=C:/Users/Donat/CLionProjects/untitled18
 
 
 ########################
@@ -615,7 +660,7 @@ _Python_EXECUTABLE:INTERNAL=C:/Users/Donat/AppData/Local/Programs/Python/Python3
 _Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;10;6;64;;cp310-win_amd64;C:\Users\Donat\AppData\Local\Programs\Python\Python310\Lib;C:\Users\Donat\AppData\Local\Programs\Python\Python310\Lib;C:\Users\Donat\AppData\Local\Programs\Python\Python310\Lib\site-packages;C:\Users\Donat\AppData\Local\Programs\Python\Python310\Lib\site-packages
 _Python_INTERPRETER_SIGNATURE:INTERNAL=04c0f93f24e3e2a0e23b90dd0284e195
 cmake_package_name:INTERNAL=GTest
-generated_dir:INTERNAL=C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug/Test/lib/gtest/googletest/generated
+generated_dir:INTERNAL=C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug/test/lib/gtest/googletest/generated
 //ADVANCED property for variable: gmock_build_tests
 gmock_build_tests-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: gtest_build_samples
