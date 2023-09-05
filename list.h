@@ -11,37 +11,32 @@
 #include "Subject.h"
 #include <list>
 
-#endif //UNTITLED18_LIST_H
+
 class List: public Subject{
 public:
     List(std::string name);
     std::string getName();
     void setName(std::string name);
-    void addItems();
-    void removeItem();
-    void changeQuantity();
-    void changeCategory();
-    void changeUnitOfMeasure();
-    void changeBought();
-    void changeName();
+    void addItem(std::string unitOfMeasure,int quantity,std::string category, std::string name,  bool bought);
+    void removeItem(std::string n);
+    void changeName(std::string n);
     void printList();
-    void printCategories();
-    void printUnitiesOfMeasure();
    void printTotalObjects();
    void printObjectsToBuy();
    void registerObserver(Observer* o) override;
     void unregisterObserver(Observer* o) override;
     void notify() override;
+    std::map<std::string,Item> getList();
+    void changeBought(Item* item, bool b);
 
 
 private:
     std::string name;
     std::map<std::string,Item> list;
 
-    std::map<int,std::string> unitiesOfMeasure;
-    std::map<int,std::string> categories;
     std::list<Observer*> obs;
     int totalobjects;
     int tobuyobjects;
 
 };
+#endif //UNTITLED18_LIST_H

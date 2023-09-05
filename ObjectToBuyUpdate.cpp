@@ -9,8 +9,8 @@ ObjectToBuyUpdate::ObjectToBuyUpdate(List *s):subject(s) {
 }
 
 void ObjectToBuyUpdate::update() {
-    printObjectsToBuy();
-}
-void ObjectToBuyUpdate::printObjectsToBuy() {
     subject->printObjectsToBuy();
+}
+ObjectToBuyUpdate::~ObjectToBuyUpdate() {
+    subject->unregisterObserver(this);
 }

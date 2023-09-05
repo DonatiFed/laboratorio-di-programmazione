@@ -5,7 +5,7 @@
 #ifndef UNTITLED18_OBJECTNUMBERUPDATE_H
 #define UNTITLED18_OBJECTNUMBERUPDATE_H
 
-#endif //UNTITLED18_OBJECTNUMBERUPDATE_H
+
 #include "Subject.h"
 #include "List.h"
 
@@ -13,7 +13,8 @@ class ObjectNumberUpdate: public Observer{
 public:
     ObjectNumberUpdate(List* s);
     void update() override;
-    void printTotalObjects();
+    ~ObjectNumberUpdate() override ;
 private:
     List* subject;
 };
+#endif //UNTITLED18_OBJECTNUMBERUPDATE_H

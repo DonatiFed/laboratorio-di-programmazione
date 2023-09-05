@@ -4,23 +4,21 @@
 #include "Item.h"
 #include <iostream>
 
-std::string Item::getName() {
-    return name;
-}
-std::string Item::getCategory() {
-    return category;
-}
+Item::Item(std::string u ,int q,std::string c, std::string n,  bool b) :unitOfMeasure(u),quantity(q),category(c),name(n),bought(b){}
+
+
 int Item::getQuantity() {
     return quantity;
 }
-std::string Item::getUnitOfMeasure() {
-    return unitOfMeasure;
-}
+
 bool Item::isBought() {
     return bought;
 }
 void Item::setName(std::string name) {
     Item::name=name;
+}
+std::string Item::getName() {
+    return name;
 }
 void Item::setCategory(std::string category) {
     Item::category=category;
@@ -31,7 +29,7 @@ void Item::setQuantity(int quantity) {
 void Item::setUnitOfMeasure(std::string unitOfMeasure) {
     Item::unitOfMeasure=unitOfMeasure;
 }
-void Item::setBought(bool bought) {
-    Item::bought=bought;
+void Item::setBought(bool b) {
+    bought=b;
 }
-Item::Item(std::string n, std::string c, int q, std::string u, bool b) :name(n),category(c),quantity(q),unitOfMeasure(u),bought(b){}
+

@@ -2,14 +2,14 @@
 // Created by Donat on 31/08/2023.
 //
 #include "User.h"
+#include "ObjectNumberUpdate.h"
+#include "ObjectToBuyUpdate.h"
 
 #include <iostream>
 
 User::User(std::string n):name(n) {
 }
-void User::setName(std::string name) {
-    this->name=name;
-}
+
 std::string User::getName() {
     return name;
 }
@@ -17,49 +17,32 @@ std::string User::getName() {
 std::map <std::string,List*> User::getLists() {
     return lists;
 }
-void User::changeName() {
-    std::cout<<"Enter new Username: "<<std::endl;
-    std::string n;
-    std::cin>>n;
+void User::changeName(std::string n) {
     name=n;
 }
 void User::addList(List* list) {
     lists.insert(std::make_pair(list->getName(),list));
 
 }
-void User::addList() {
-    std::cout<<"Enter the name of the list: "<<std::endl;
-    std::string n;
-    std::cin>>n;
+void User::addList(std::string n) {
     List* l = new List(n);
     lists.insert(std::make_pair(l->getName(),l));
+    ObjectToBuyUpdate* o = new ObjectToBuyUpdate (l);
+    ObjectNumberUpdate* o2 = new ObjectNumberUpdate (l);
+
     std::cout<<"List created"<<std::endl;
-    std::cout<<"Add some items to the list"<<std::endl;
-    l->addItems();
+
 
 
 }
-void User::removeList() {
-    std::cout<<"Which list do you want to remove?: "<<std::endl;
-    printLists();
-    int n;
-    std::cin>>n;
-    if(n<=0){
-        std::cout<<"Select a number higher than 0"<<std::endl;
+void User::removeList(std::string n) {
+    auto it=lists.find(n);
+    if(it==lists.end()){
+        std::cout<<"No list removed"<<std::endl;
         return;
     }
-    if(n>lists.size()){
-        std::cout<<"Select a number lower than "<<lists.size()<<std::endl;
-        return;
-    }
-    int i=1;
-    for(auto it=lists.begin();it!=lists.end();it++){
-        if(i==n){
-            lists.erase(it);
-            return;
-        }
-        i++;
-    }
+   lists.erase(n);
+    std::cout<<"List removed"<<std::endl;
 }
 void User::printLists() {
     if (lists.size()==0){
@@ -73,7 +56,7 @@ void User::printLists() {
         i++;
     }
 }
-List* User::selectList() {
+/*List* User::selectList() {
 
     int n;
     bool listselected=false;
@@ -99,3 +82,4 @@ List* User::selectList() {
     }
     }while(!listselected);
 }
+*/

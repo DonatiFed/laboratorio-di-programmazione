@@ -5,7 +5,7 @@
 #ifndef UNTITLED18_OBJECTTOBUYUPDATE_H
 #define UNTITLED18_OBJECTTOBUYUPDATE_H
 
-#endif //UNTITLED18_OBJECTTOBUYUPDATE_H
+
 
 #include "Subject.h"
 #include "List.h"
@@ -14,7 +14,8 @@ class ObjectToBuyUpdate: public Observer{
 public:
     ObjectToBuyUpdate(List* s);
     void update() override;
-    void printObjectsToBuy();
+    ~ObjectToBuyUpdate() override ;
 private:
     List* subject;
 };
+#endif //UNTITLED18_OBJECTTOBUYUPDATE_H

@@ -10,24 +10,24 @@
 
 class Item{
 public:
-Item(std::string n, std::string c, int q, std::string u, bool b);
-    std::string getName();
-    std::string getCategory();
+Item(std::string u, int q, std::string c, std::string n,  bool b);
+
     int getQuantity();
-    std::string getUnitOfMeasure();
     bool isBought();
     void setName(std::string name);
+    std::string getName();
     void setCategory(std::string category);
     void setQuantity(int quantity);
     void setUnitOfMeasure(std::string unitOfMeasure);
-    void setBought(bool bought);
+    void setBought(bool b);
 
 
 private:
-    std::string name;
-    std::string category;
-    int quantity;
     std::string unitOfMeasure;
+    int quantity;
+    std::string category;
+    std::string name;
+
     bool bought;
 
 };

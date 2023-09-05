@@ -14,13 +14,12 @@ public:
     User(std::string n);
     std::map <std::string,List*> getLists();
     std::string getName();
-    void setName(std::string name);
-    void changeName();
+    void changeName(std::string n);
     void addList(List *list);
-    void addList();
-    void removeList();
+    void addList(std::string n);
+    void removeList(std::string n);
     void printLists();
-    List* selectList();
+ //   List* selectList();
 
 
 private:

@@ -9,8 +9,8 @@ ObjectNumberUpdate::ObjectNumberUpdate(List *s):subject(s) {
 }
 
 void ObjectNumberUpdate::update() {
-    printTotalObjects();
-}
-void ObjectNumberUpdate::printTotalObjects() {
     subject->printTotalObjects();
+}
+ObjectNumberUpdate::~ObjectNumberUpdate() {
+    subject->unregisterObserver(this);
 }
