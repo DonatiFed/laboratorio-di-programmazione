@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Donat/CLionProjects/untitled18
+# Install script for directory: C:/Users/Donat/CLionProjects/laboratorio programmazione
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/untitled18")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/untitled_18")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug/test/cmake_install.cmake")
+  include("C:/Users/Donat/CLionProjects/laboratorio programmazione/cmake-build-debug/test/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Donat/CLionProjects/untitled18/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Donat/CLionProjects/laboratorio programmazione/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

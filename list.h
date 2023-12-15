@@ -18,6 +18,7 @@ public:
     std::string getName();
     void setName(std::string name);
     void addItem(std::string unitOfMeasure,int quantity,std::string category, std::string name,  bool bought);
+    void addItem(Item i);
     void removeItem(std::string n);
     void changeName(std::string n);
     void printList();

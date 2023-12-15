@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 #include "User.h"
 
 
@@ -16,10 +17,18 @@ std::string insertCategory(){
 
     return insertString();
 }
-int insertQuantity(){
+int insertQuantity() {
     int n;
-    std::cout<<"Insert the quantity:"<<std::endl;
-    std::cin>>n;
+    while (true) {
+        std::cout << "Insert the quantity: " << std::endl;
+        if (std::cin >> n) { //controlla se l'input è un intero
+            break;
+        } else {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Ignora il resto della linea
+            std::cout << "Invalid input. Please enter an integer." << std::endl;
+        }
+    }
     return n;
 }
 std::string insertUnitOfMeasure(){
@@ -28,9 +37,11 @@ std::string insertUnitOfMeasure(){
 }
 bool insertBought(){
     std::cout<<"Did you buy the Item?"<<std::endl;
-    std::string s;
-    std::cin>>s;
-    if(s=="yes"){
+    std::cout<<"1) Yes"<<std::endl;
+    std::cout<<"2) No"<<std::endl;
+    int choice;
+    std::cin>>choice;
+    if(choice==1){
         return true;
     }
     return false;
@@ -134,8 +145,9 @@ void ListManager(List* list){
         std::cout << "2) Select an item" << std::endl;
         std::cout << "3) Remove an item" << std::endl;
         std::cout << "4) set item as bought/to buy" << std::endl;
-        std::cout << "5) Change name" << std::endl;
-        std::cout<<"6) Exit"<<std::endl;
+        std::cout << "5) Change list's name" << std::endl;
+        std::cout<<"6) print the list"<<std::endl;
+        std::cout<<"7) Exit"<<std::endl;
 
         std::cin >> choice;
         switch (choice) {
@@ -143,6 +155,10 @@ void ListManager(List* list){
                 list->addItem(insertUnitOfMeasure(),insertQuantity(),insertCategory(),insertName(),false);
                 break;
             case '2':
+                if(list->getList().size()==0) {
+                    std::cout << "You don't have any item in the list" << std::endl;
+                    break;
+                }
                 ItemManager(itemSelection(list));
                 break;
             case '3':
@@ -154,13 +170,21 @@ void ListManager(List* list){
                 break;
 
             case '4':
+                if(list->getList().size()==0) {
+                    std::cout << "You don't have any item in the list" << std::endl;
+                    break;
+                }
                 list->changeBought(itemSelection(list),insertBought());
                 break;
             case '5':
                 list->changeName(insertName());
                 break;
-
             case '6':
+                std::cout<<"List "<<list->getName()<<":"<<std::endl;
+                list->printList();
+                break;
+
+            case '7':
                 continueiteration = false;
                 break;
             default:

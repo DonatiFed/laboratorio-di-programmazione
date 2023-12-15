@@ -22,13 +22,20 @@ void List::addItem(std::string unitOfMeasure,  int quantity,std::string category
         Item i(unitOfMeasure, quantity, category, name, false);
         list.insert(std::make_pair(name, i));
         totalobjects++;
-        tobuyobjects++;// gli observer npn arrivano qui, ma vengono eliminati prima;
+        tobuyobjects++;
         notify();
 
 
         std::cout << "Item added" << std::endl;
 
 
+}
+void List::addItem(Item i) {
+    list.insert(std::make_pair(i.getName(),i));
+    totalobjects++;
+    tobuyobjects++;
+    notify();
+    std::cout<<"Item added"<<std::endl;
 }
 
 void List::removeItem(std::string n) {

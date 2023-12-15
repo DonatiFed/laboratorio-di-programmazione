@@ -156,7 +156,7 @@ rule CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Donat\CLionProjects\untitled18 -BC:\Users\Donat\CLionProjects\untitled18\cmake-build-debug
+  command = "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Donat\CLionProjects\laboratorio programmazione" -B"C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug"
   description = Re-running CMake...
   generator = 1
 

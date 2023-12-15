@@ -5,7 +5,7 @@
 #ifndef UNTITLED18_ITEM_H
 #define UNTITLED18_ITEM_H
 
-#endif //UNTITLED18_ITEM_H
+
 #include <iostream>
 
 class Item{
@@ -31,3 +31,4 @@ private:
     bool bought;
 
 };
+#endif //UNTITLED18_ITEM_H

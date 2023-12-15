@@ -27,12 +27,7 @@ void User::addList(List* list) {
 void User::addList(std::string n) {
     List* l = new List(n);
     lists.insert(std::make_pair(l->getName(),l));
-    ObjectToBuyUpdate* o = new ObjectToBuyUpdate (l);
-    ObjectNumberUpdate* o2 = new ObjectNumberUpdate (l);
-
     std::cout<<"List created"<<std::endl;
-
-
 
 }
 void User::removeList(std::string n) {
