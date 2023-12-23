@@ -8,18 +8,29 @@
 
 #include <iostream>
 
-class Item{
+class Item {
 public:
-Item(std::string u, int q, std::string c, std::string n,  bool b);
+    Item(std::string u, int q, std::string c, std::string n, bool b);
 
-    int getQuantity();
-    bool isBought();
-    void setName(std::string name);
-    std::string getName();
-    void setCategory(std::string category);
+    int getQuantity() const;
+
+    bool isBought() const;
+
+    void setName(std::string &name);
+
+    std::string getName() const;
+
+    void setCategory(std::string &category);
+
     void setQuantity(int quantity);
-    void setUnitOfMeasure(std::string unitOfMeasure);
+
+    void setUnitOfMeasure(std::string &unitOfMeasure);
+
     void setBought(bool b);
+
+    const std::string &getUnitOfMeasure() const;
+
+    const std::string &getCategory() const;
 
 
 private:
@@ -31,4 +42,5 @@ private:
     bool bought;
 
 };
+
 #endif //UNTITLED18_ITEM_H

@@ -3,49 +3,50 @@
 //
 #include <iostream>
 #include <map>
-
+#include <sstream>
 #include "List.h"
 #include "Subject.h"
 #include "ObjectNumberUpdate.h"
-List::List(std::string n) :name(n),totalobjects(0),tobuyobjects(0){
+
+List::List(std::string &n) : name(n), totalobjects(0), tobuyobjects(0) {
 }
 
-void List::setName(std::string name) {
-    List::name=name;
+void List::setName(std::string &name) {
+    List::name = name;
 }
-std::string List::getName() {
+
+const std::string &List::getName() const {
     return name;
 }
 
-void List::addItem(std::string unitOfMeasure,  int quantity,std::string category,std::string name,  bool bought) {
+void List::addItem(std::string &unitOfMeasure, int quantity, std::string &category, std::string &name, bool bought) {
 
-        Item i(unitOfMeasure, quantity, category, name, false);
-        list.insert(std::make_pair(name, i));
-        totalobjects++;
-        tobuyobjects++;
-        notify();
-
-
-        std::cout << "Item added" << std::endl;
-
-
-}
-void List::addItem(Item i) {
-    list.insert(std::make_pair(i.getName(),i));
+    Item i(unitOfMeasure, quantity, category, name, false);
+    list.insert(std::make_pair(name, i));
     totalobjects++;
     tobuyobjects++;
+    // std::cout << "Item added" << std::endl;
     notify();
-    std::cout<<"Item added"<<std::endl;
+
+
 }
 
-void List::removeItem(std::string n) {
+void List::addItem(Item i) {
+    list.insert(std::make_pair(i.getName(), i));
+    totalobjects++;
+    tobuyobjects++;
+    //  std::cout << "Item added" << std::endl;
+    notify();
+
+}
+
+void List::removeItem(const std::string &n) {
     auto it = list.find(n);
     if (it == list.end()) {
-        std::cout << "No item removed" << std::endl;
-    }
-    else {
+        //  std::cout << "No item removed" << std::endl;
+    } else {
         list.erase(n);
-        std::cout << "Item removed" << std::endl;
+        //  std::cout << "Item removed" << std::endl;
         totalobjects--;
         tobuyobjects--;
         notify();
@@ -53,60 +54,82 @@ void List::removeItem(std::string n) {
 }
 
 
-
-
-void List::changeBought(Item* i, bool b) {
-    if(i== nullptr){
-        std::cout<<"Item not found"<<std::endl;
+void List::changeBought(const std::string &name, bool b) {
+    auto i = list.find(name);
+    if (i == list.end()) {
+        // std::cout << "Item not found" << std::endl;
         return;
     }
-    if(i->isBought()==b){
-        std::cout<<"no need to change"<<std::endl;
+    if (i->second.isBought() == b) {
+        // std::cout << "no need to change" << std::endl;
         return;
     }
-    i->setBought(b);
-    if(b==true){
+    i->second.setBought(b);
+    if (b == true) {
         tobuyobjects--;
-    }
-    else{
+    } else {
         tobuyobjects++;
     }
-    std::cout<<"Bought changed"<<std::endl;
+    // std::cout << "Bought changed" << std::endl;
     notify();
 }
 
-void List::printList() {
-    int i=1;
-    for(auto x:list){
-        std::cout<<i<<")  "<<x.first<<std::endl;
-        i++;
 
-    }
+int List::TotalObjectsnumber() {
+    return totalobjects;
 }
 
-void List::printTotalObjects() {
-    std::cout<<"Total objects: "<<totalobjects<<std::endl;
-}
-void List::printObjectsToBuy() {
-    std::cout<<"Objects to buy: "<<tobuyobjects<<std::endl;
+int List::ToBuynumber() {
+    return tobuyobjects;
 }
 
 void List::registerObserver(Observer *o) {
     obs.push_back(o);
 }
-void::List::unregisterObserver(Observer *o) {
+
+void ::List::unregisterObserver(Observer *o) {
     obs.remove(o);
 }
+
 void List::notify() {
-    for(auto x:obs){
+    for (auto x: obs) {
         x->update();
     }
 }
-void List::changeName(std::string n) {
-    name=n;
+
+void List::changeName(std::string &n) {
+    name = n;
 }
-std::map<std::string,Item> List::getList() {
+
+std::map<std::string, Item> List::getList() const {
     return list;
 }
 
+std::string List::totelementslist() {
+    std::string s;
+    std::string result;
+    std::string q;
+    for (auto x: list) {
+        std::stringstream ss;
+        ss << x.second.getQuantity();
+        q = ss.str();
+        s = "\n" + x.second.getName() + " " + q + " " + x.second.getUnitOfMeasure() + " " + x.second.getCategory();
+        result += s;
+    }
+    return result;
+}
+
+std::string List::tobuyelementslist() {
+    std::string s;
+    std::string result;
+    std::string q;
+    for (auto x: list) {
+        std::stringstream ss;
+        ss << x.second.getQuantity();
+        q = ss.str();
+        s = "\n" + x.second.getName() + " " + q + " " + x.second.getUnitOfMeasure() + " " + x.second.getCategory();
+        result += s;
+    }
+    return result;
+}
 

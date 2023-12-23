@@ -4,32 +4,57 @@
 #include "Item.h"
 #include <iostream>
 
-Item::Item(std::string u ,int q,std::string c, std::string n,  bool b) :unitOfMeasure(u),quantity(q),category(c),name(n),bought(b){}
+Item::Item(std::string u, int q, std::string c, std::string n, bool b) : unitOfMeasure(u), category(c),
+                                                                         name(n), bought(b) {
+    if (q <= 0) {
+        quantity = 0;
+    } else {
+        quantity = q;
+    }
+}
 
 
-int Item::getQuantity() {
+int Item::getQuantity() const {
     return quantity;
 }
 
-bool Item::isBought() {
+bool Item::isBought() const {
     return bought;
 }
-void Item::setName(std::string name) {
-    Item::name=name;
+
+void Item::setName(std::string &name) {
+    Item::name = name;
 }
-std::string Item::getName() {
+
+std::string Item::getName() const {
     return name;
 }
-void Item::setCategory(std::string category) {
-    Item::category=category;
+
+void Item::setCategory(std::string &category) {
+    Item::category = category;
 }
+
 void Item::setQuantity(int quantity) {
-    Item::quantity=quantity;
+    if (quantity <= 0) {
+        Item::quantity = 0;
+    } else {
+        Item::quantity = quantity;
+    }
 }
-void Item::setUnitOfMeasure(std::string unitOfMeasure) {
-    Item::unitOfMeasure=unitOfMeasure;
+
+const std::string &Item::getUnitOfMeasure() const {
+    return unitOfMeasure;
 }
+
+void Item::setUnitOfMeasure(std::string &unitOfMeasure) {
+    Item::unitOfMeasure = unitOfMeasure;
+}
+
 void Item::setBought(bool b) {
-    bought=b;
+    bought = b;
+}
+
+const std::string &Item::getCategory() const {
+    return category;
 }
 

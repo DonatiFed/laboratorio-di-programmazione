@@ -6,25 +6,34 @@
 #define UNTITLED18_USER_H
 
 #endif //UNTITLED18_USER_H
+
 #include <iostream>
 #include <map>
 #include "List.h"
-class User{
+
+class User {
 public:
-    User(std::string n);
-    std::map <std::string,List*> getLists();
-    std::string getName();
-    void changeName(std::string n);
+    User(std::string &n);
+
+    std::map<std::string, List *> getLists() const;
+
+    std::string getName() const;
+
+    void changeName(std::string &n);
+
     void addList(List *list);
-    void addList(std::string n);
-    void removeList(std::string n);
+
+    void addList(std::string &n);
+
+    void removeList(const std::string &n);
+
     void printLists();
- //   List* selectList();
+    //   List* selectList();
 
 
 private:
     std::string name;
-    std::map<std::string,List*> lists;
+    std::map<std::string, List *> lists;
 
 
 };

@@ -8,42 +8,45 @@
 
 
 TEST(ListTest, Constructor) {
-    List l("List1");
+    std::string list1name = "List1";
+    List l(list1name);
 }
+
 TEST(ListTest, AddObject) {
-    List l("List1");
-    l.addItem("Kg", 2,"milk","yogurt", false);
+    std::string list1name = "List1";
+    List l(list1name);
+    std::string uom = "Kg";
+    std::string categ = "milk";
+    std::string name = "icecream";
+    l.addItem(uom, 2, categ, name, false);
 }
+
 TEST(ListTest, RemoveObject) {
-    List l("List1");
-    l.addItem("Kg", 2,"milk","yogurt", false);
+    std::string list1name = "List1";
+    List l(list1name);
+    std::string uom = "Kg";
+    std::string categ = "milk";
+    std::string name = "yogurt";
+    l.addItem(uom, 2, categ, name, false);
     l.removeItem("yogurt");
 }
+
 TEST(ListTest, ChangeBought) {
-    List l("List1");
-    Item i("Kg", 1,"milk","yogurt", false);
+    std::string list1name = "List1";
+    List l(list1name);
+    Item i("Kg", 2, "milk", "cream", false);
     l.addItem(i);
-    l.changeBought(&i,true);
+    l.changeBought(i.getName(), true);
 }
 
-TEST(ListTest, PrintList) {
-    List l("List1");
-    l.addItem("Kg", 1,"milk","yogurt", false);
-    l.printList();
+TEST(ListTest, totelementseist) {
+    std::string list1name = "List1";
+    List l(list1name);
+    std::string uom = "Kg";
+    std::string categ = "milk";
+    std::string name = "milk";
+    l.addItem(uom, 2, categ, name, false);
+    l.totelementslist();
 }
-TEST(ListTest, PrintTotalObjects) {
-    List l("List1");
-    l.addItem("Kg", 1,"milk","yogurt", false);
-    l.addItem("kg",1,"bakery","bread", false);
 
-    l.printTotalObjects();
-}
-TEST(ListTest, PrintObjectsToBuy) {
-    List l("List1");
-    l.addItem("Kg", 1,"milk","yogurt", false);
-    Item i("kg",1,"bakery","bread", false);
-    l.addItem(i);
-    l.changeBought(&i,true);
-    l.printObjectsToBuy();
 
-}

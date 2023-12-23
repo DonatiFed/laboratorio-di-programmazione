@@ -6,14 +6,18 @@
 #define UNTITLED18_SUBJECT_H
 
 
-
 #include "Observer.h"
-class Subject{
+
+class Subject {
 public:
-    virtual void registerObserver(Observer* o)=0;
-    virtual void unregisterObserver(Observer*o)=0;
-    virtual void notify()=0;
-    virtual ~Subject(){}
+    virtual void registerObserver(Observer *o) = 0;
+
+    virtual void unregisterObserver(Observer *o) = 0;
+
+    virtual void notify() = 0;
+
+    virtual ~Subject() {}
 
 };
-#endif //UNTITLED18_SUBJECT_H
+
+#endif UNTITLED18_SUBJECT_H

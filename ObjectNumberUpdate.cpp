@@ -4,13 +4,14 @@
 #include "ObjectNumberUpdate.h"
 #include <iostream>
 
-ObjectNumberUpdate::ObjectNumberUpdate(List *s):subject(s) {
+ObjectNumberUpdate::ObjectNumberUpdate(List *s) : subject(s) {
     s->registerObserver(this);
 }
 
 void ObjectNumberUpdate::update() {
-    subject->printTotalObjects();
+    std::cout << "total number of elements: " << subject->TotalObjectsnumber() << std::endl;
 }
+
 ObjectNumberUpdate::~ObjectNumberUpdate() {
     subject->unregisterObserver(this);
 }

@@ -6,6 +6,9 @@
 #include "../Item.h"
 
 TEST(ItemTest, Constructor) {
-    Item i("Kg", 3,"milk","yogurt", false);
+    std::string uom = "Kg";
+    std::string categ = "milk";
+    std::string name = "cream";
+    Item i(uom, 2, categ, name, false);
 }
 

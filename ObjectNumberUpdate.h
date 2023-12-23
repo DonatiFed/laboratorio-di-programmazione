@@ -9,12 +9,16 @@
 #include "Subject.h"
 #include "List.h"
 
-class ObjectNumberUpdate: public Observer{
+class ObjectNumberUpdate : public Observer {
 public:
-    ObjectNumberUpdate(List* s);
+    ObjectNumberUpdate(List *s);
+
     void update() override;
-    ~ObjectNumberUpdate() override ;
+
+    ~ObjectNumberUpdate() override;
+
 private:
-    List* subject;
+    List *subject;
 };
+
 #endif //UNTITLED18_OBJECTNUMBERUPDATE_H

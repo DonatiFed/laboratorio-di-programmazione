@@ -112,6 +112,12 @@ build CMakeFiles/core.dir/list.cpp.obj: CXX_COMPILER__core_Debug C$:/Users/Donat
   OBJECT_DIR = CMakeFiles\core.dir
   OBJECT_FILE_DIR = CMakeFiles\core.dir
 
+build CMakeFiles/core.dir/ListUpdate.cpp.obj: CXX_COMPILER__core_Debug C$:/Users/Donat/CLionProjects/laboratorio$ programmazione/ListUpdate.cpp || cmake_object_order_depends_target_core
+  DEP_FILE = CMakeFiles\core.dir\ListUpdate.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\core.dir
+  OBJECT_FILE_DIR = CMakeFiles\core.dir
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target core
@@ -120,7 +126,7 @@ build CMakeFiles/core.dir/list.cpp.obj: CXX_COMPILER__core_Debug C$:/Users/Donat
 #############################################
 # Link the static library libcore.a
 
-build libcore.a: CXX_STATIC_LIBRARY_LINKER__core_Debug CMakeFiles/core.dir/User.cpp.obj CMakeFiles/core.dir/Item.cpp.obj CMakeFiles/core.dir/ObjectNumberUpdate.cpp.obj CMakeFiles/core.dir/ObjectToBuyUpdate.cpp.obj CMakeFiles/core.dir/list.cpp.obj
+build libcore.a: CXX_STATIC_LIBRARY_LINKER__core_Debug CMakeFiles/core.dir/User.cpp.obj CMakeFiles/core.dir/Item.cpp.obj CMakeFiles/core.dir/ObjectNumberUpdate.cpp.obj CMakeFiles/core.dir/ObjectToBuyUpdate.cpp.obj CMakeFiles/core.dir/list.cpp.obj CMakeFiles/core.dir/ListUpdate.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles\core.dir
   POST_BUILD = cd .
@@ -235,6 +241,13 @@ build test/CMakeFiles/runTests.dir/TestUser.cpp.obj: CXX_COMPILER__runTests_Debu
   OBJECT_DIR = test\CMakeFiles\runTests.dir
   OBJECT_FILE_DIR = test\CMakeFiles\runTests.dir
 
+build test/CMakeFiles/runTests.dir/TestListUpdate.cpp.obj: CXX_COMPILER__runTests_Debug C$:/Users/Donat/CLionProjects/laboratorio$ programmazione/test/TestListUpdate.cpp || cmake_object_order_depends_target_runTests
+  DEP_FILE = test\CMakeFiles\runTests.dir\TestListUpdate.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -isystem "C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googletest/include" -isystem "C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googletest"
+  OBJECT_DIR = test\CMakeFiles\runTests.dir
+  OBJECT_FILE_DIR = test\CMakeFiles\runTests.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target runTests
@@ -243,7 +256,7 @@ build test/CMakeFiles/runTests.dir/TestUser.cpp.obj: CXX_COMPILER__runTests_Debu
 #############################################
 # Link the executable test\runTests.exe
 
-build test/runTests.exe: CXX_EXECUTABLE_LINKER__runTests_Debug test/CMakeFiles/runTests.dir/runAllTests.cpp.obj test/CMakeFiles/runTests.dir/TestList.cpp.obj test/CMakeFiles/runTests.dir/TestItem.cpp.obj test/CMakeFiles/runTests.dir/TestUser.cpp.obj | lib/libgtest.a lib/libgtest_main.a libcore.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a libcore.a
+build test/runTests.exe: CXX_EXECUTABLE_LINKER__runTests_Debug test/CMakeFiles/runTests.dir/runAllTests.cpp.obj test/CMakeFiles/runTests.dir/TestList.cpp.obj test/CMakeFiles/runTests.dir/TestItem.cpp.obj test/CMakeFiles/runTests.dir/TestUser.cpp.obj test/CMakeFiles/runTests.dir/TestListUpdate.cpp.obj | lib/libgtest.a lib/libgtest_main.a libcore.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a libcore.a
   FLAGS = -g
   LINK_LIBRARIES = lib/libgtest.a  lib/libgtest_main.a  libcore.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = test\CMakeFiles\runTests.dir
