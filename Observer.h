@@ -6,10 +6,11 @@
 #define UNTITLED18_OBSERVER_H
 
 
-
-class Observer{
+class Observer {
 public:
-    virtual void update()=0;
-    virtual ~Observer(){}
+    virtual void update() = 0;
+
+    virtual ~Observer() {}
 };
+
 #endif //UNTITLED18_OBSERVER_H

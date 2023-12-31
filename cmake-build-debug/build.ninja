@@ -54,6 +54,8 @@ build CMakeFiles/untitled_18.dir/main.cpp.obj: CXX_COMPILER__untitled_18_Debug C
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\untitled_18.dir
   OBJECT_FILE_DIR = CMakeFiles\untitled_18.dir
+  TARGET_COMPILE_PDB = CMakeFiles\untitled_18.dir\
+  TARGET_PDB = untitled_18.pdb
 
 
 # =============================================================================
@@ -69,9 +71,10 @@ build untitled_18.exe: CXX_EXECUTABLE_LINKER__untitled_18_Debug CMakeFiles/untit
   OBJECT_DIR = CMakeFiles\untitled_18.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\untitled_18.dir\
   TARGET_FILE = untitled_18.exe
   TARGET_IMPLIB = libuntitled_18.dll.a
-  TARGET_PDB = untitled_18.exe.dbg
+  TARGET_PDB = untitled_18.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target core
@@ -87,36 +90,48 @@ build CMakeFiles/core.dir/User.cpp.obj: CXX_COMPILER__core_Debug C$:/Users/Donat
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\core.dir
   OBJECT_FILE_DIR = CMakeFiles\core.dir
+  TARGET_COMPILE_PDB = CMakeFiles\core.dir\core.pdb
+  TARGET_PDB = libcore.pdb
 
 build CMakeFiles/core.dir/Item.cpp.obj: CXX_COMPILER__core_Debug C$:/Users/Donat/CLionProjects/laboratorio$ programmazione/Item.cpp || cmake_object_order_depends_target_core
   DEP_FILE = CMakeFiles\core.dir\Item.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\core.dir
   OBJECT_FILE_DIR = CMakeFiles\core.dir
+  TARGET_COMPILE_PDB = CMakeFiles\core.dir\core.pdb
+  TARGET_PDB = libcore.pdb
 
 build CMakeFiles/core.dir/ObjectNumberUpdate.cpp.obj: CXX_COMPILER__core_Debug C$:/Users/Donat/CLionProjects/laboratorio$ programmazione/ObjectNumberUpdate.cpp || cmake_object_order_depends_target_core
   DEP_FILE = CMakeFiles\core.dir\ObjectNumberUpdate.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\core.dir
   OBJECT_FILE_DIR = CMakeFiles\core.dir
+  TARGET_COMPILE_PDB = CMakeFiles\core.dir\core.pdb
+  TARGET_PDB = libcore.pdb
 
 build CMakeFiles/core.dir/ObjectToBuyUpdate.cpp.obj: CXX_COMPILER__core_Debug C$:/Users/Donat/CLionProjects/laboratorio$ programmazione/ObjectToBuyUpdate.cpp || cmake_object_order_depends_target_core
   DEP_FILE = CMakeFiles\core.dir\ObjectToBuyUpdate.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\core.dir
   OBJECT_FILE_DIR = CMakeFiles\core.dir
+  TARGET_COMPILE_PDB = CMakeFiles\core.dir\core.pdb
+  TARGET_PDB = libcore.pdb
 
 build CMakeFiles/core.dir/list.cpp.obj: CXX_COMPILER__core_Debug C$:/Users/Donat/CLionProjects/laboratorio$ programmazione/list.cpp || cmake_object_order_depends_target_core
   DEP_FILE = CMakeFiles\core.dir\list.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\core.dir
   OBJECT_FILE_DIR = CMakeFiles\core.dir
+  TARGET_COMPILE_PDB = CMakeFiles\core.dir\core.pdb
+  TARGET_PDB = libcore.pdb
 
 build CMakeFiles/core.dir/ListUpdate.cpp.obj: CXX_COMPILER__core_Debug C$:/Users/Donat/CLionProjects/laboratorio$ programmazione/ListUpdate.cpp || cmake_object_order_depends_target_core
   DEP_FILE = CMakeFiles\core.dir\ListUpdate.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\core.dir
   OBJECT_FILE_DIR = CMakeFiles\core.dir
+  TARGET_COMPILE_PDB = CMakeFiles\core.dir\core.pdb
+  TARGET_PDB = libcore.pdb
 
 
 # =============================================================================
@@ -131,15 +146,16 @@ build libcore.a: CXX_STATIC_LIBRARY_LINKER__core_Debug CMakeFiles/core.dir/User.
   OBJECT_DIR = CMakeFiles\core.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\core.dir\core.pdb
   TARGET_FILE = libcore.a
-  TARGET_PDB = core.a.dbg
+  TARGET_PDB = libcore.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -150,7 +166,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Donat\CLionProjects\laboratorio programmazione" -B"C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S"C:\Users\Donat\CLionProjects\laboratorio programmazione" -B"C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -168,7 +184,7 @@ build list_install_components: phony
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -180,7 +196,7 @@ build install: phony CMakeFiles/install.util
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -192,7 +208,7 @@ build install/local: phony CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -219,6 +235,8 @@ build test/CMakeFiles/runTests.dir/runAllTests.cpp.obj: CXX_COMPILER__runTests_D
   INCLUDES = -isystem "C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googletest/include" -isystem "C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googletest"
   OBJECT_DIR = test\CMakeFiles\runTests.dir
   OBJECT_FILE_DIR = test\CMakeFiles\runTests.dir
+  TARGET_COMPILE_PDB = test\CMakeFiles\runTests.dir\
+  TARGET_PDB = test\runTests.pdb
 
 build test/CMakeFiles/runTests.dir/TestList.cpp.obj: CXX_COMPILER__runTests_Debug C$:/Users/Donat/CLionProjects/laboratorio$ programmazione/test/TestList.cpp || cmake_object_order_depends_target_runTests
   DEP_FILE = test\CMakeFiles\runTests.dir\TestList.cpp.obj.d
@@ -226,6 +244,8 @@ build test/CMakeFiles/runTests.dir/TestList.cpp.obj: CXX_COMPILER__runTests_Debu
   INCLUDES = -isystem "C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googletest/include" -isystem "C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googletest"
   OBJECT_DIR = test\CMakeFiles\runTests.dir
   OBJECT_FILE_DIR = test\CMakeFiles\runTests.dir
+  TARGET_COMPILE_PDB = test\CMakeFiles\runTests.dir\
+  TARGET_PDB = test\runTests.pdb
 
 build test/CMakeFiles/runTests.dir/TestItem.cpp.obj: CXX_COMPILER__runTests_Debug C$:/Users/Donat/CLionProjects/laboratorio$ programmazione/test/TestItem.cpp || cmake_object_order_depends_target_runTests
   DEP_FILE = test\CMakeFiles\runTests.dir\TestItem.cpp.obj.d
@@ -233,6 +253,8 @@ build test/CMakeFiles/runTests.dir/TestItem.cpp.obj: CXX_COMPILER__runTests_Debu
   INCLUDES = -isystem "C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googletest/include" -isystem "C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googletest"
   OBJECT_DIR = test\CMakeFiles\runTests.dir
   OBJECT_FILE_DIR = test\CMakeFiles\runTests.dir
+  TARGET_COMPILE_PDB = test\CMakeFiles\runTests.dir\
+  TARGET_PDB = test\runTests.pdb
 
 build test/CMakeFiles/runTests.dir/TestUser.cpp.obj: CXX_COMPILER__runTests_Debug C$:/Users/Donat/CLionProjects/laboratorio$ programmazione/test/TestUser.cpp || cmake_object_order_depends_target_runTests
   DEP_FILE = test\CMakeFiles\runTests.dir\TestUser.cpp.obj.d
@@ -240,6 +262,8 @@ build test/CMakeFiles/runTests.dir/TestUser.cpp.obj: CXX_COMPILER__runTests_Debu
   INCLUDES = -isystem "C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googletest/include" -isystem "C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googletest"
   OBJECT_DIR = test\CMakeFiles\runTests.dir
   OBJECT_FILE_DIR = test\CMakeFiles\runTests.dir
+  TARGET_COMPILE_PDB = test\CMakeFiles\runTests.dir\
+  TARGET_PDB = test\runTests.pdb
 
 build test/CMakeFiles/runTests.dir/TestListUpdate.cpp.obj: CXX_COMPILER__runTests_Debug C$:/Users/Donat/CLionProjects/laboratorio$ programmazione/test/TestListUpdate.cpp || cmake_object_order_depends_target_runTests
   DEP_FILE = test\CMakeFiles\runTests.dir\TestListUpdate.cpp.obj.d
@@ -247,6 +271,8 @@ build test/CMakeFiles/runTests.dir/TestListUpdate.cpp.obj: CXX_COMPILER__runTest
   INCLUDES = -isystem "C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googletest/include" -isystem "C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googletest"
   OBJECT_DIR = test\CMakeFiles\runTests.dir
   OBJECT_FILE_DIR = test\CMakeFiles\runTests.dir
+  TARGET_COMPILE_PDB = test\CMakeFiles\runTests.dir\
+  TARGET_PDB = test\runTests.pdb
 
 
 # =============================================================================
@@ -262,16 +288,17 @@ build test/runTests.exe: CXX_EXECUTABLE_LINKER__runTests_Debug test/CMakeFiles/r
   OBJECT_DIR = test\CMakeFiles\runTests.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = test\CMakeFiles\runTests.dir\
   TARGET_FILE = test\runTests.exe
   TARGET_IMPLIB = test\librunTests.dll.a
-  TARGET_PDB = runTests.exe.dbg
+  TARGET_PDB = test\runTests.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -282,7 +309,7 @@ build test/edit_cache: phony test/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Donat\CLionProjects\laboratorio programmazione" -B"C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S"C:\Users\Donat\CLionProjects\laboratorio programmazione" -B"C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -300,7 +327,7 @@ build test/list_install_components: phony
 # Utility command for install
 
 build test/CMakeFiles/install.util: CUSTOM_COMMAND test/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -312,7 +339,7 @@ build test/install: phony test/CMakeFiles/install.util
 # Utility command for install/local
 
 build test/CMakeFiles/install/local.util: CUSTOM_COMMAND test/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -324,7 +351,7 @@ build test/install/local: phony test/CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build test/CMakeFiles/install/strip.util: CUSTOM_COMMAND test/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -341,7 +368,7 @@ build test/install/strip: phony test/CMakeFiles/install/strip.util
 # Utility command for edit_cache
 
 build test/lib/gtest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -352,7 +379,7 @@ build test/lib/gtest/edit_cache: phony test/lib/gtest/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build test/lib/gtest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Donat\CLionProjects\laboratorio programmazione" -B"C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S"C:\Users\Donat\CLionProjects\laboratorio programmazione" -B"C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -370,7 +397,7 @@ build test/lib/gtest/list_install_components: phony
 # Utility command for install
 
 build test/lib/gtest/CMakeFiles/install.util: CUSTOM_COMMAND test/lib/gtest/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -382,7 +409,7 @@ build test/lib/gtest/install: phony test/lib/gtest/CMakeFiles/install.util
 # Utility command for install/local
 
 build test/lib/gtest/CMakeFiles/install/local.util: CUSTOM_COMMAND test/lib/gtest/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -394,7 +421,7 @@ build test/lib/gtest/install/local: phony test/lib/gtest/CMakeFiles/install/loca
 # Utility command for install/strip
 
 build test/lib/gtest/CMakeFiles/install/strip.util: CUSTOM_COMMAND test/lib/gtest/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -421,6 +448,8 @@ build test/lib/gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_C
   INCLUDES = -I"C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googlemock/include" -I"C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googlemock" -isystem "C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googletest/include" -isystem "C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googletest"
   OBJECT_DIR = test\lib\gtest\googlemock\CMakeFiles\gmock.dir
   OBJECT_FILE_DIR = test\lib\gtest\googlemock\CMakeFiles\gmock.dir\src
+  TARGET_COMPILE_PDB = lib\libgmockpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin\libgmockpdb_debug_postfix-NOTFOUND.pdb
 
 
 # =============================================================================
@@ -435,8 +464,9 @@ build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug test/lib/gtest/goog
   OBJECT_DIR = test\lib\gtest\googlemock\CMakeFiles\gmock.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = lib\libgmockpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib\libgmock.a
-  TARGET_PDB = gmock.a.dbg
+  TARGET_PDB = bin\libgmockpdb_debug_postfix-NOTFOUND.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target gmock_main
@@ -453,6 +483,8 @@ build test/lib/gtest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj:
   INCLUDES = -isystem "C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googlemock/include" -isystem "C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googlemock" -isystem "C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googletest/include" -isystem "C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googletest"
   OBJECT_DIR = test\lib\gtest\googlemock\CMakeFiles\gmock_main.dir
   OBJECT_FILE_DIR = test\lib\gtest\googlemock\CMakeFiles\gmock_main.dir\src
+  TARGET_COMPILE_PDB = lib\libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin\libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
 
 
 # =============================================================================
@@ -467,15 +499,16 @@ build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug test/lib/
   OBJECT_DIR = test\lib\gtest\googlemock\CMakeFiles\gmock_main.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = lib\libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib\libgmock_main.a
-  TARGET_PDB = gmock_main.a.dbg
+  TARGET_PDB = bin\libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build test/lib/gtest/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest\googlemock" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest\googlemock" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -486,7 +519,7 @@ build test/lib/gtest/googlemock/edit_cache: phony test/lib/gtest/googlemock/CMak
 # Utility command for rebuild_cache
 
 build test/lib/gtest/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest\googlemock" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Donat\CLionProjects\laboratorio programmazione" -B"C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest\googlemock" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S"C:\Users\Donat\CLionProjects\laboratorio programmazione" -B"C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -504,7 +537,7 @@ build test/lib/gtest/googlemock/list_install_components: phony
 # Utility command for install
 
 build test/lib/gtest/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND test/lib/gtest/googlemock/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest\googlemock" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest\googlemock" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -516,7 +549,7 @@ build test/lib/gtest/googlemock/install: phony test/lib/gtest/googlemock/CMakeFi
 # Utility command for install/local
 
 build test/lib/gtest/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND test/lib/gtest/googlemock/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest\googlemock" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest\googlemock" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -528,7 +561,7 @@ build test/lib/gtest/googlemock/install/local: phony test/lib/gtest/googlemock/C
 # Utility command for install/strip
 
 build test/lib/gtest/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND test/lib/gtest/googlemock/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest\googlemock" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest\googlemock" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -555,6 +588,8 @@ build test/lib/gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_C
   INCLUDES = -I"C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googletest/include" -I"C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googletest"
   OBJECT_DIR = test\lib\gtest\googletest\CMakeFiles\gtest.dir
   OBJECT_FILE_DIR = test\lib\gtest\googletest\CMakeFiles\gtest.dir\src
+  TARGET_COMPILE_PDB = lib\libgtestpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin\libgtestpdb_debug_postfix-NOTFOUND.pdb
 
 
 # =============================================================================
@@ -569,8 +604,9 @@ build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug test/lib/gtest/goog
   OBJECT_DIR = test\lib\gtest\googletest\CMakeFiles\gtest.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = lib\libgtestpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib\libgtest.a
-  TARGET_PDB = gtest.a.dbg
+  TARGET_PDB = bin\libgtestpdb_debug_postfix-NOTFOUND.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target gtest_main
@@ -587,6 +623,8 @@ build test/lib/gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj:
   INCLUDES = -isystem "C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googletest/include" -isystem "C:/Users/Donat/CLionProjects/laboratorio programmazione/test/lib/gtest/googletest"
   OBJECT_DIR = test\lib\gtest\googletest\CMakeFiles\gtest_main.dir
   OBJECT_FILE_DIR = test\lib\gtest\googletest\CMakeFiles\gtest_main.dir\src
+  TARGET_COMPILE_PDB = lib\libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin\libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
 
 
 # =============================================================================
@@ -601,15 +639,16 @@ build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug test/lib/
   OBJECT_DIR = test\lib\gtest\googletest\CMakeFiles\gtest_main.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = lib\libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib\libgtest_main.a
-  TARGET_PDB = gtest_main.a.dbg
+  TARGET_PDB = bin\libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build test/lib/gtest/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest\googletest" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest\googletest" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -620,7 +659,7 @@ build test/lib/gtest/googletest/edit_cache: phony test/lib/gtest/googletest/CMak
 # Utility command for rebuild_cache
 
 build test/lib/gtest/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest\googletest" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Donat\CLionProjects\laboratorio programmazione" -B"C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest\googletest" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S"C:\Users\Donat\CLionProjects\laboratorio programmazione" -B"C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -638,7 +677,7 @@ build test/lib/gtest/googletest/list_install_components: phony
 # Utility command for install
 
 build test/lib/gtest/googletest/CMakeFiles/install.util: CUSTOM_COMMAND test/lib/gtest/googletest/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest\googletest" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest\googletest" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -650,7 +689,7 @@ build test/lib/gtest/googletest/install: phony test/lib/gtest/googletest/CMakeFi
 # Utility command for install/local
 
 build test/lib/gtest/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND test/lib/gtest/googletest/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest\googletest" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest\googletest" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -662,7 +701,7 @@ build test/lib/gtest/googletest/install/local: phony test/lib/gtest/googletest/C
 # Utility command for install/strip
 
 build test/lib/gtest/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND test/lib/gtest/googletest/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest\googletest" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Donat\CLionProjects\laboratorio programmazione\cmake-build-debug\test\lib\gtest\googletest" && C:\Users\Donat\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -741,14 +780,14 @@ build test/lib/gtest/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../test/CMakeLists.txt ../test/lib/gtest/CMakeLists.txt ../test/lib/gtest/googlemock/CMakeLists.txt ../test/lib/gtest/googlemock/cmake/gmock.pc.in ../test/lib/gtest/googlemock/cmake/gmock_main.pc.in ../test/lib/gtest/googletest/CMakeLists.txt ../test/lib/gtest/googletest/cmake/Config.cmake.in ../test/lib/gtest/googletest/cmake/gtest.pc.in ../test/lib/gtest/googletest/cmake/gtest_main.pc.in ../test/lib/gtest/googletest/cmake/internal_utils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPython.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPython/Support.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeRCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../test/CMakeLists.txt ../test/lib/gtest/CMakeLists.txt ../test/lib/gtest/googlemock/CMakeLists.txt ../test/lib/gtest/googlemock/cmake/gmock.pc.in ../test/lib/gtest/googlemock/cmake/gmock_main.pc.in ../test/lib/gtest/googletest/CMakeLists.txt ../test/lib/gtest/googletest/cmake/Config.cmake.in ../test/lib/gtest/googletest/cmake/gtest.pc.in ../test/lib/gtest/googletest/cmake/gtest_main.pc.in ../test/lib/gtest/googletest/cmake/internal_utils.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeCCompiler.cmake.in C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeCCompilerABI.c C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXCompiler.cmake.in C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeCompilerIdDetection.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeDependentOption.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCompilerId.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineRCCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineSystem.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeFindBinUtils.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeParseLibraryArchitecture.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCCompiler.cmake.in C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystem.cmake.in C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeTestCCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeTestCXXCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeTestCompilerCommon.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeTestRCCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/FindPackageMessage.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/FindPython.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/FindPython/Support.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/GNUInstallDirs.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-Determine-CXX.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeRCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../test/CMakeLists.txt ../test/lib/gtest/CMakeLists.txt ../test/lib/gtest/googlemock/CMakeLists.txt ../test/lib/gtest/googlemock/cmake/gmock.pc.in ../test/lib/gtest/googlemock/cmake/gmock_main.pc.in ../test/lib/gtest/googletest/CMakeLists.txt ../test/lib/gtest/googletest/cmake/Config.cmake.in ../test/lib/gtest/googletest/cmake/gtest.pc.in ../test/lib/gtest/googletest/cmake/gtest_main.pc.in ../test/lib/gtest/googletest/cmake/internal_utils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPython.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPython/Support.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeRCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../test/CMakeLists.txt ../test/lib/gtest/CMakeLists.txt ../test/lib/gtest/googlemock/CMakeLists.txt ../test/lib/gtest/googlemock/cmake/gmock.pc.in ../test/lib/gtest/googlemock/cmake/gmock_main.pc.in ../test/lib/gtest/googletest/CMakeLists.txt ../test/lib/gtest/googletest/cmake/Config.cmake.in ../test/lib/gtest/googletest/cmake/gtest.pc.in ../test/lib/gtest/googletest/cmake/gtest_main.pc.in ../test/lib/gtest/googletest/cmake/internal_utils.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeCCompiler.cmake.in C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeCCompilerABI.c C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXCompiler.cmake.in C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeCompilerIdDetection.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeDependentOption.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCompilerId.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineRCCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineSystem.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeFindBinUtils.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeParseLibraryArchitecture.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCCompiler.cmake.in C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystem.cmake.in C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeTestCCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeTestCXXCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeTestCompilerCommon.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/CMakeTestRCCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/FindPackageMessage.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/FindPython.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/FindPython/Support.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/GNUInstallDirs.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-Determine-CXX.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake C$:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/win/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeRCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
 
 
 #############################################

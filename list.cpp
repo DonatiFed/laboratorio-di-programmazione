@@ -24,7 +24,9 @@ void List::addItem(std::string &unitOfMeasure, int quantity, std::string &catego
     Item i(unitOfMeasure, quantity, category, name, false);
     list.insert(std::make_pair(name, i));
     totalobjects++;
-    tobuyobjects++;
+    if (quantity>0){
+        tobuyobjects++;
+    }
     // std::cout << "Item added" << std::endl;
     notify();
 
@@ -34,7 +36,9 @@ void List::addItem(std::string &unitOfMeasure, int quantity, std::string &catego
 void List::addItem(Item i) {
     list.insert(std::make_pair(i.getName(), i));
     totalobjects++;
-    tobuyobjects++;
+    if (i.getQuantity()>0){
+        tobuyobjects++;
+    }
     //  std::cout << "Item added" << std::endl;
     notify();
 
@@ -112,7 +116,7 @@ std::string List::totelementslist() {
     for (auto x: list) {
         std::stringstream ss;
         ss << x.second.getQuantity();
-        q = ss.str();
+        q = ss.str(); // trasformo un intero in una stringa
         s = "\n" + x.second.getName() + " " + q + " " + x.second.getUnitOfMeasure() + " " + x.second.getCategory();
         result += s;
     }
@@ -124,11 +128,14 @@ std::string List::tobuyelementslist() {
     std::string result;
     std::string q;
     for (auto x: list) {
-        std::stringstream ss;
-        ss << x.second.getQuantity();
-        q = ss.str();
-        s = "\n" + x.second.getName() + " " + q + " " + x.second.getUnitOfMeasure() + " " + x.second.getCategory();
-        result += s;
+        if(x.second.isBought()==false){
+            std::stringstream ss;
+            ss << x.second.getQuantity();
+            q = ss.str(); // trasformo un intero in una stringa
+            s = "\n" + x.second.getName() + " " + q + " " + x.second.getUnitOfMeasure() + " " + x.second.getCategory();
+            result += s;
+        }
+
     }
     return result;
 }

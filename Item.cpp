@@ -5,11 +5,13 @@
 #include <iostream>
 
 Item::Item(std::string u, int q, std::string c, std::string n, bool b) : unitOfMeasure(u), category(c),
-                                                                         name(n), bought(b) {
+                                                                         name(n)  {
     if (q <= 0) {
         quantity = 0;
+        bought= true;
     } else {
         quantity = q;
+        bought=b;
     }
 }
 

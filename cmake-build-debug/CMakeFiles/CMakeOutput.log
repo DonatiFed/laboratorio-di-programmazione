@@ -1,6 +1,6 @@
 The system is: Windows - 10.0.22621 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/gcc.exe 
+Compiler: C:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/mingw/bin/gcc.exe 
 Build flags: 
 Id flags:  
 
@@ -13,7 +13,7 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 The C compiler identification is GNU, found in "C:/Users/Donat/CLionProjects/laboratorio programmazione/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/a.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/g++.exe 
+Compiler: C:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/mingw/bin/g++.exe 
 Build flags: 
 Id flags:  
 
@@ -28,16 +28,16 @@ The CXX compiler identification is GNU, found in "C:/Users/Donat/CLionProjects/l
 Determining if the C compiler works passed with the following output:
 Change Dir: C:/Users/Donat/CLionProjects/laboratorio programmazione/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.2.4/bin/ninja/win/ninja.exe cmTC_eaf54 && [1/2] Building C object CMakeFiles/cmTC_eaf54.dir/testCCompiler.c.obj
-[2/2] Linking C executable cmTC_eaf54.exe
+Run Build Command(s):C:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/ninja/win/ninja.exe cmTC_aa1ed && [1/2] Building C object CMakeFiles/cmTC_aa1ed.dir/testCCompiler.c.obj
+[2/2] Linking C executable cmTC_aa1ed.exe
 
 
 
 Determining if the CXX compiler works passed with the following output:
 Change Dir: C:/Users/Donat/CLionProjects/laboratorio programmazione/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.2.4/bin/ninja/win/ninja.exe cmTC_b31f5 && [1/2] Building CXX object CMakeFiles/cmTC_b31f5.dir/testCXXCompiler.cxx.obj
-[2/2] Linking CXX executable cmTC_b31f5.exe
+Run Build Command(s):C:/Users/Donat/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/ninja/win/ninja.exe cmTC_5ee6b && [1/2] Building CXX object CMakeFiles/cmTC_5ee6b.dir/testCXXCompiler.cxx.obj
+[2/2] Linking CXX executable cmTC_5ee6b.exe
 
 
 

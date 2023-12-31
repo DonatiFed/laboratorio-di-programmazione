@@ -6,16 +6,19 @@
 #define UNTITLED18_OBJECTTOBUYUPDATE_H
 
 
-
 #include "Subject.h"
 #include "List.h"
 
-class ObjectToBuyUpdate: public Observer{
+class ObjectToBuyUpdate : public Observer {
 public:
-    ObjectToBuyUpdate(List* s);
+    ObjectToBuyUpdate(List *s);
+
     void update() override;
-    ~ObjectToBuyUpdate() override ;
+
+    ~ObjectToBuyUpdate() override;
+
 private:
-    List* subject;
+    List *subject;
 };
+
 #endif //UNTITLED18_OBJECTTOBUYUPDATE_H
