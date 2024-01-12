@@ -10,13 +10,13 @@
 
 class Item {
 public:
-    Item(std::string u, int q, std::string c, std::string n, bool b);
+    Item(std::string &u, int q, std::string &c, std::string &n, bool b);
 
     int getQuantity() const;
 
     bool isBought() const;
 
-    void setName(std::string &name);
+    void setName(const std::string &name);
 
     std::string getName() const;
 

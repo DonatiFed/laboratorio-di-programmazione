@@ -10,8 +10,8 @@ ListUpdate::ListUpdate(List *s) : subject(s) {
 }
 
 void ListUpdate::update() {
-    std::cout << "list elements: " << subject->totelementslist() << std::endl;
-    std::cout << "tobuy elements: " << subject->tobuyelementslist() << std::endl;
+    std::cout << "list elements: " << subject->totElementsList() << std::endl;
+    std::cout << "tobuy elements: " << subject->toBuyElementsList() << std::endl;
 }
 
 ListUpdate::~ListUpdate() {

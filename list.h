@@ -15,11 +15,11 @@
 
 class List : public Subject {
 public:
-    List(std::string &name);
+    explicit List(std::string &name);
 
     const std::string &getName() const;
 
-    void setName(std::string &name);
+    void setName(const std::string &name);
 
     void addItem(std::string &unitOfMeasure, int quantity, std::string &category, std::string &name, bool bought);
 
@@ -30,9 +30,9 @@ public:
     void changeName(std::string &n);
 
 
-    int TotalObjectsnumber();
+   int totalObjectsNumber() const;
 
-    int ToBuynumber();
+    int toBuyNumber() const;
 
     void registerObserver(Observer *o) override;
 
@@ -44,9 +44,9 @@ public:
 
     void changeBought(const std::string &name, bool b);
 
-    std::string totelementslist();
+    std::string totElementsList();
 
-    std::string tobuyelementslist();
+    std::string toBuyElementsList();
 
 
 private:

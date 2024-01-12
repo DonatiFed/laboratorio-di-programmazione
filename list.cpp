@@ -6,23 +6,21 @@
 #include <sstream>
 #include "List.h"
 #include "Subject.h"
-#include "ObjectNumberUpdate.h"
+
 
 List::List(std::string &n) : name(n), totalobjects(0), tobuyobjects(0) {
 }
 
-void List::setName(std::string &name) {
-    List::name = name;
-}
+
 
 const std::string &List::getName() const {
     return name;
 }
 
-void List::addItem(std::string &unitOfMeasure, int quantity, std::string &category, std::string &name, bool bought) {
+void List::addItem(std::string &unitOfMeasure, int quantity, std::string &category, std::string &names, bool bought) {
 
     Item i(unitOfMeasure, quantity, category, name, false);
-    list.insert(std::make_pair(name, i));
+    list.insert(std::make_pair(names, i));
     totalobjects++;
     if (quantity>0){
         tobuyobjects++;
@@ -58,8 +56,8 @@ void List::removeItem(const std::string &n) {
 }
 
 
-void List::changeBought(const std::string &name, bool b) {
-    auto i = list.find(name);
+void List::changeBought(const std::string &names, bool b) {
+    auto i = list.find(names);
     if (i == list.end()) {
         // std::cout << "Item not found" << std::endl;
         return;
@@ -69,7 +67,7 @@ void List::changeBought(const std::string &name, bool b) {
         return;
     }
     i->second.setBought(b);
-    if (b == true) {
+    if (b) {
         tobuyobjects--;
     } else {
         tobuyobjects++;
@@ -79,11 +77,11 @@ void List::changeBought(const std::string &name, bool b) {
 }
 
 
-int List::TotalObjectsnumber() {
+int List::totalObjectsNumber() const{
     return totalobjects;
 }
 
-int List::ToBuynumber() {
+int List::toBuyNumber() const{
     return tobuyobjects;
 }
 
@@ -109,7 +107,7 @@ std::map<std::string, Item> List::getList() const {
     return list;
 }
 
-std::string List::totelementslist() {
+std::string List::totElementsList() {
     std::string s;
     std::string result;
     std::string q;
@@ -123,12 +121,12 @@ std::string List::totelementslist() {
     return result;
 }
 
-std::string List::tobuyelementslist() {
+std::string List::toBuyElementsList() {
     std::string s;
     std::string result;
     std::string q;
     for (auto x: list) {
-        if(x.second.isBought()==false){
+        if(!x.second.isBought()){
             std::stringstream ss;
             ss << x.second.getQuantity();
             q = ss.str(); // trasformo un intero in una stringa

@@ -9,7 +9,7 @@ ObjectNumberUpdate::ObjectNumberUpdate(List *s) : subject(s) {
 }
 
 void ObjectNumberUpdate::update() {
-    std::cout << "total number of elements: " << subject->TotalObjectsnumber() << std::endl;
+    std::cout << "total number of elements: " << subject->totalObjectsNumber() << std::endl;
 }
 
 ObjectNumberUpdate::~ObjectNumberUpdate() {

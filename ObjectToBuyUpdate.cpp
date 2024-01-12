@@ -9,7 +9,7 @@ ObjectToBuyUpdate::ObjectToBuyUpdate(List *s) : subject(s) {
 }
 
 void ObjectToBuyUpdate::update() {
-    std::cout << "Objects to buy: " << subject->ToBuynumber() << std::endl;
+    std::cout << "Objects to buy: " << subject->toBuyNumber() << std::endl;
 }
 
 ObjectToBuyUpdate::~ObjectToBuyUpdate() {

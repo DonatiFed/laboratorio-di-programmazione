@@ -77,7 +77,7 @@ List *listSelection(User *u) {
         for (auto it = u->getLists().begin(); it != u->getLists().end(); it++) {
             if (i == n) {
                 std::cout << "List " << it->second->getName() << ":" << std::endl;
-                it->second->totelementslist();
+                it->second->totElementsList();
                 return it->second;
             }
             i++;
@@ -93,7 +93,7 @@ Item *itemSelection(List *list) {
     bool itemselected = false;
     do {
         std::cout << "Select an item" << std::endl;
-        list->totelementslist();
+        list->totElementsList();
         std::cin >> number;
         if (number <= 0 || number > list->getList().size()) {
             std::cout << "Select a number between 0 and " << list->getList().size() + 1 << std::endl;
@@ -194,7 +194,7 @@ void ListManager(List *list) {
                 list->changeName(insertName());
                 break;
             case '6':
-                list->totelementslist();
+                list->totElementsList();
                 break;
 
             case '7':
