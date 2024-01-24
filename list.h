@@ -15,19 +15,19 @@
 
 class List : public Subject {
 public:
-    explicit List(std::string &name);
+    explicit List(const std::string &name);
 
     const std::string &getName() const;
 
     void setName(const std::string &name);
 
-    void addItem(std::string &unitOfMeasure, int quantity, std::string &category, std::string &name, bool bought);
+    void addItem(const std::string &unitOfMeasure, int quantity, const std::string &category,const std::string &name, bool bought);
 
     void addItem(Item i);
 
     void removeItem(const std::string &n);
 
-    void changeName(std::string &n);
+    void changeName(const std::string &n);
 
 
    int totalObjectsNumber() const;

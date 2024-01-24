@@ -5,7 +5,7 @@
 #ifndef UNTITLED18_USER_H
 #define UNTITLED18_USER_H
 
-#endif //UNTITLED18_USER_H
+
 
 #include <iostream>
 #include <map>
@@ -13,22 +13,22 @@
 
 class User {
 public:
-    User(std::string &n);
+    User(const std::string &n);
 
     std::map<std::string, List *> getLists() const;
 
     std::string getName() const;
 
-    void changeName(std::string &n);
+    void changeName(const std::string &n);
 
     void addList(List *list);
 
-    void addList(std::string &n);
+    void addList(const std::string &n) ;
 
     void removeList(const std::string &n);
 
     void printLists();
-    //   List* selectList();
+
 
 
 private:
@@ -37,3 +37,4 @@ private:
 
 
 };
+#endif //UNTITLED18_USER_H

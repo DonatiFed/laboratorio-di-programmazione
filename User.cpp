@@ -7,7 +7,7 @@
 
 #include <iostream>
 
-User::User(std::string &n) : name(n) {
+User::User(const std::string &n) : name(n) {
 }
 
 std::string User::getName() const {
@@ -18,7 +18,7 @@ std::map<std::string, List *> User::getLists() const {
     return lists;
 }
 
-void User::changeName(std::string &n) {
+void User::changeName(const std::string &n) {
     name = n;
 }
 
@@ -27,7 +27,8 @@ void User::addList(List *list) {
 
 }
 
-void User::addList(std::string &n) {
+void User::addList(const std::string &n) {
+    std::string a=n;
     List *l = new List(n);
     lists.insert(std::make_pair(l->getName(), l));
     // std::cout<<"List created"<<std::endl;

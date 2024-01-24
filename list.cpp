@@ -8,7 +8,7 @@
 #include "Subject.h"
 
 
-List::List(std::string &n) : name(n), totalobjects(0), tobuyobjects(0) {
+List::List(const std::string &name) : name(name), totalobjects(0), tobuyobjects(0) {
 }
 
 
@@ -17,7 +17,7 @@ const std::string &List::getName() const {
     return name;
 }
 
-void List::addItem(std::string &unitOfMeasure, int quantity, std::string &category, std::string &names, bool bought) {
+void List::addItem(const std::string &unitOfMeasure, int quantity, const std::string &category,const std::string &names, bool bought) {
 
     Item i(unitOfMeasure, quantity, category, name, false);
     list.insert(std::make_pair(names, i));
@@ -99,7 +99,7 @@ void List::notify() {
     }
 }
 
-void List::changeName(std::string &n) {
+void List::changeName(const std::string &n) {
     name = n;
 }
 

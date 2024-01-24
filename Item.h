@@ -10,7 +10,7 @@
 
 class Item {
 public:
-    Item(std::string &u, int q, std::string &c, std::string &n, bool b);
+    Item(const std::string &u, int q, const std::string &c, const std::string &n, bool b);
 
     int getQuantity() const;
 
@@ -20,11 +20,11 @@ public:
 
     std::string getName() const;
 
-    void setCategory(std::string &category);
+    void setCategory(const std::string &category);
 
     void setQuantity(int quantity);
 
-    void setUnitOfMeasure(std::string &unitOfMeasure);
+    void setUnitOfMeasure(const std::string &unitOfMeasure);
 
     void setBought(bool b);
 

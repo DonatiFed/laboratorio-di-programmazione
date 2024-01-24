@@ -20,4 +20,4 @@ public:
 
 };
 
-#endif UNTITLED18_SUBJECT_H
+#endif //UNTITLED18_SUBJECT_H

@@ -4,7 +4,7 @@
 #include "Item.h"
 #include <iostream>
 
-Item::Item(std::string &u, int q, std::string &c, std::string &n, bool b) : unitOfMeasure(u), category(c),
+Item::Item(const std::string &u, int q, const std::string &c,const std::string &n, bool b) : unitOfMeasure(u), category(c),
                                                                          name(n)  {
     if (q <= 0) {
         quantity = 0;
@@ -32,7 +32,7 @@ std::string Item::getName() const {
     return name;
 }
 
-void Item::setCategory(std::string &categorys) {
+void Item::setCategory(const std::string &categorys) {
     Item::category = categorys;
 }
 
@@ -48,7 +48,7 @@ const std::string &Item::getUnitOfMeasure() const {
     return unitOfMeasure;
 }
 
-void Item::setUnitOfMeasure(std::string &unitofMeasure) {
+void Item::setUnitOfMeasure(const std::string &unitofMeasure) {
     Item::unitOfMeasure = unitofMeasure;
 }
 
