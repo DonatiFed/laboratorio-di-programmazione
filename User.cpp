@@ -56,30 +56,3 @@ void User::printLists() {
         i++;
     }
 }
-/*List* User::selectList() {
-
-    int n;
-    bool listselected=false;
-    do{
-        std::cout<<"Which list do you want to select?: "<<std::endl;
-        printLists();
-    std::cin>>n;
-    if(n<=0){
-        std::cout<<"Select a number higher than 0"<<std::endl;
-        continue;
-    }
-    if(n>lists.size()){
-        std::cout<<"Select a number lower than "<<lists.size()+1<<std::endl;
-        continue;
-    }
-    int i=1;
-    for(auto it=lists.begin();it!=lists.end();it++){
-        if(i==n){
-            it->second->printList();
-            return it->second;
-        }
-        i++;
-    }
-    }while(!listselected);
-}
-*/
