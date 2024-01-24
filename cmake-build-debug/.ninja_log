@@ -35,3 +35,9 @@
 11	1523	7267857970015040	test/CMakeFiles/runTests.dir/TestList.cpp.obj	ae084ef400818731
 11	1383	7267862526119710	test/CMakeFiles/runTests.dir/TestListUpdate.cpp.obj	4f7fbe8b6f2195f1
 1385	4954	7267862561705921	test/runTests.exe	85e981d8ae6677f7
+27	584	7267868572852806	CMakeFiles/core.dir/Item.cpp.obj	b6f1355bc6b90bd7
+8	1084	7267868577831474	CMakeFiles/core.dir/list.cpp.obj	e1268171bb943ec7
+1084	1231	7267868579327836	libcore.a	ae46e3eaf2cbf20e
+19	1547	7267868582479957	test/CMakeFiles/runTests.dir/TestListUpdate.cpp.obj	4f7fbe8b6f2195f1
+1547	4802	7267868614926836	test/runTests.exe	85e981d8ae6677f7
+3	237	7267868665590589	untitled_18.exe	5f531940670a4bbc

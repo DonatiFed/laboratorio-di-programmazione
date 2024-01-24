@@ -34,7 +34,10 @@ TEST(ListTest, RemoveObject) {
 TEST(ListTest, ChangeBought) {
     std::string list1name = "List1";
     List l(list1name);
-    Item i("Kg", 2, "milk", "cream", false);
+    std::string uom = "Kg";
+    std::string categ = "milk";
+    std::string name = "yogurt";
+    Item i(uom, 2, categ, name, false);
     l.addItem(i);
     l.changeBought(i.getName(), true);
 }
@@ -46,7 +49,7 @@ TEST(ListTest, totelementseist) {
     std::string categ = "milk";
     std::string name = "milk";
     l.addItem(uom, 2, categ, name, false);
-    l.totelementslist();
+    l.totElementsList();
 }
 
 
