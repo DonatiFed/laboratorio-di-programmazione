@@ -6,18 +6,18 @@
 #define UNTITLED18_LISTUPDATE_H
 
 #include "Subject.h"
-#include "List.h"
+#include "Shoppinglist.h"
 
 class ListUpdate : public Observer {
 public:
-    ListUpdate(List *s);
+    ListUpdate(ShoppingList *s);
 
     void update() override;
 
     ~ListUpdate() override;
 
 private:
-    List *subject;
+    ShoppingList *subject;
 };
 
 

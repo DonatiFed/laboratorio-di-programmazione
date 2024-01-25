@@ -4,7 +4,7 @@
 #include "ObjectNumberUpdate.h"
 #include <iostream>
 
-ObjectNumberUpdate::ObjectNumberUpdate(List *s) : subject(s) {
+ObjectNumberUpdate::ObjectNumberUpdate(ShoppingList *s) : subject(s) {
     s->registerObserver(this);
 }
 

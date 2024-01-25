@@ -3,7 +3,7 @@
 //
 
 #include <gtest/gtest.h>
-#include "../list.h"
+#include "../Shoppinglist.h"
 #include "../Item.h"
 
 
@@ -33,7 +33,7 @@ TEST(ListTest, RemoveObject) {
 
 TEST(ListTest, ChangeBought) {
     std::string list1name = "List1";
-    List l(list1name);
+    ShoppingList l(list1name);
     std::string uom = "Kg";
     std::string categ = "milk";
     std::string name = "yogurt";
@@ -44,7 +44,7 @@ TEST(ListTest, ChangeBought) {
 
 TEST(ListTest, totelementseist) {
     std::string list1name = "List1";
-    List l(list1name);
+    ShoppingList l(list1name);
     std::string uom = "Kg";
     std::string categ = "milk";
     std::string name = "milk";

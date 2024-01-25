@@ -52,7 +52,7 @@ bool insertBought() {
     return false;
 }
 
-List *listSelection(User *u) {
+ShoppingList *listSelection(User *u) {
 
     int n;
     bool listselected = false;
@@ -85,7 +85,7 @@ List *listSelection(User *u) {
     } while (!listselected);
 }
 
-Item *itemSelection(List *list) {
+Item *itemSelection(ShoppingList *list) {
     if (list->getList().size() == 0) {
         std::cout << "You don't have any item in the list" << std::endl;
     }
@@ -146,7 +146,7 @@ void ItemManager(Item *item) {
     } while (continueiteration);
 }
 
-void ListManager(List *list) {
+void ListManager(ShoppingList *list) {
     if (list == nullptr) {
         std::cout << "No list found" << std::endl;
         return;

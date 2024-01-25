@@ -25,7 +25,7 @@ TEST(Usertest, AddList) {
     std::string list1name = "List1";
     std::string list2name = "List2";
 
-    List l(list2name);
+    ShoppingList l(list2name);
     u.addList(list1name);
     u.addList(&l);
 
@@ -36,7 +36,7 @@ TEST(Usertest, RemoveList) {
     User u(name);
     std::string list1name = "List1";
     std::string list2name = "List2";
-    List l(list2name);
+    ShoppingList l(list2name);
     u.addList(list1name);
     u.addList(&l);
     u.removeList("List1");
@@ -49,7 +49,7 @@ TEST(Usertest, PrintLists) {
     User u(name);
     std::string list1name = "List1";
     std::string list2name = "List2";
-    List l(list2name);
+    ShoppingList l(list2name);
     u.addList(list1name);
     u.addList(&l);
 
@@ -61,7 +61,7 @@ TEST(Usertest, GetLists) {
     User u(name);
     std::string list1name = "List1";
     std::string list2name = "List2";
-    List l(list2name);
+    ShoppingList l(list2name);
     u.addList(list1name);
     u.addList(&l);
     u.getLists();

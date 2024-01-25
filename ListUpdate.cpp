@@ -5,7 +5,7 @@
 #include "ListUpdate.h"
 #include <iostream>
 
-ListUpdate::ListUpdate(List *s) : subject(s) {
+ListUpdate::ListUpdate(ShoppingList *s) : subject(s) {
     s->registerObserver(this);
 }
 

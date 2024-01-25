@@ -11,13 +11,13 @@
 
 TEST(ListUpdateTest, AddObserver) {
     std::string list1name = "List1";
-    List *s = new List(list1name);
+    ShoppingList *s = new ShoppingList(list1name);
     auto *o = new ListUpdate(s);
 }
 
 TEST(ListUpdateTest, Update) {
     std::string list1name = "List1";
-    List *s = new List(list1name);
+    ShoppingList *s = new ShoppingList(list1name);
     auto *o2 = new ObjectNumberUpdate(s);
     auto *o3 = new ObjectToBuyUpdate(s);
     auto *o = new ListUpdate(s);

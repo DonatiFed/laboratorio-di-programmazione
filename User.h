@@ -9,19 +9,19 @@
 
 #include <iostream>
 #include <map>
-#include "List.h"
+#include "Shoppinglist.h"
 
 class User {
 public:
     User(const std::string &n);
 
-    std::map<std::string, List *> getLists() const;
+    std::map<std::string, ShoppingList *> getLists() const;
 
     std::string getName() const;
 
     void changeName(const std::string &n);
 
-    void addList(List *list);
+    void addList(ShoppingList *list);
 
     void addList(const std::string &n) ;
 
@@ -33,7 +33,7 @@ public:
 
 private:
     std::string name;
-    std::map<std::string, List *> lists;
+    std::map<std::string, ShoppingList *> lists;
 
 
 };

@@ -14,7 +14,7 @@ std::string User::getName() const {
     return name;
 }
 
-std::map<std::string, List *> User::getLists() const {
+std::map<std::string, ShoppingList *> User::getLists() const {
     return lists;
 }
 
@@ -22,14 +22,14 @@ void User::changeName(const std::string &n) {
     name = n;
 }
 
-void User::addList(List *list) {
+void User::addList(ShoppingList *list) {
     lists.insert(std::make_pair(list->getName(), list));
 
 }
 
 void User::addList(const std::string &n) {
     std::string a=n;
-    List *l = new List(n);
+    ShoppingList *l = new ShoppingList(n);
     lists.insert(std::make_pair(l->getName(), l));
     // std::cout<<"List created"<<std::endl;
 

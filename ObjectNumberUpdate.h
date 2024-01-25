@@ -7,18 +7,18 @@
 
 
 #include "Subject.h"
-#include "List.h"
+#include "Shoppinglist.h"
 
 class ObjectNumberUpdate : public Observer {
 public:
-    ObjectNumberUpdate(List *s);
+    ObjectNumberUpdate(ShoppingList *s);
 
     void update() override;
 
     ~ObjectNumberUpdate() override;
 
 private:
-    List *subject;
+    ShoppingList *subject;
 };
 
 #endif //UNTITLED18_OBJECTNUMBERUPDATE_H

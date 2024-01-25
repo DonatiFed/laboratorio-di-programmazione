@@ -4,7 +4,7 @@
 #include <iostream>
 #include "ObjectToBuyUpdate.h"
 
-ObjectToBuyUpdate::ObjectToBuyUpdate(List *s) : subject(s) {
+ObjectToBuyUpdate::ObjectToBuyUpdate(ShoppingList *s) : subject(s) {
     s->registerObserver(this);
 }
 
