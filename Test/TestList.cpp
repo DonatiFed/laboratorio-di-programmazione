@@ -9,12 +9,12 @@
 
 TEST(ListTest, Constructor) {
     std::string list1name = "List1";
-    List l(list1name);
+    ShoppingList l(list1name);
 }
 
 TEST(ListTest, AddObject) {
     std::string list1name = "List1";
-    List l(list1name);
+    ShoppingList l(list1name);
     std::string uom = "Kg";
     std::string categ = "milk";
     std::string name = "icecream";
@@ -23,7 +23,7 @@ TEST(ListTest, AddObject) {
 
 TEST(ListTest, RemoveObject) {
     std::string list1name = "List1";
-    List l(list1name);
+    ShoppingList l(list1name);
     std::string uom = "Kg";
     std::string categ = "milk";
     std::string name = "yogurt";
