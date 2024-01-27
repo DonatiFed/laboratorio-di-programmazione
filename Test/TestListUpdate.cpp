@@ -10,12 +10,15 @@
 
 
 TEST(ListUpdateTest, AddObserver) {
+    std::cout << "ListUpdate method AddObserver test" << std::endl;
     std::string list1name = "List1";
     ShoppingList *s = new ShoppingList(list1name);
     auto *o = new ListUpdate(s);
+    std::cout << "ListUpdate method AddObserver test done" << std::endl;
 }
 
 TEST(ListUpdateTest, Update) {
+    std::cout << "ListUpdate method Update test" << std::endl;
     std::string list1name = "List1";
     ShoppingList *s = new ShoppingList(list1name);
     auto *o2 = new ObjectNumberUpdate(s);
@@ -52,6 +55,7 @@ TEST(ListUpdateTest, Update) {
     std::string name6= "eggs";
     Item eggs(uom5, -3, categ5,name5 , false);
 
+
     s->addItem(cream);
     s->addItem(icecream);
     s->addItem(yogurt);
@@ -62,6 +66,6 @@ TEST(ListUpdateTest, Update) {
     s->removeItem("yogurt");
     delete o;
     delete s;
-
+    std::cout << "ListUpdate method Update test done" << std::endl;
 
 }
