@@ -1,0 +1,17 @@
+# ninja log v5
+121	2999	7279243982243712	CMakeFiles/core.dir/ListUpdate.cpp.obj	3ae3b009902c3b27
+10	3030	7279243982273753	CMakeFiles/core.dir/ObjectToBuyUpdate.cpp.obj	497e3af9fd2ae138
+95	4791	7279243999355849	CMakeFiles/core.dir/list.cpp.obj	e1268171bb943ec7
+270	7937	7279244031818542	Test/CMakeFiles/runTests.dir/TestItem.cpp.obj	cdaf60cb588243bf
+300	7950	7279244031908948	Test/CMakeFiles/runTests.dir/runAllTests.cpp.obj	44e809511205563e
+3035	7963	7279244032054398	Test/CMakeFiles/runTests.dir/TestListUpdate.cpp.obj	210e8707f1a2673c
+143	7987	7279244032274956	Test/CMakeFiles/runTests.dir/TestList.cpp.obj	3b8200f552e6cf7f
+3007	8067	7279244033044623	Test/CMakeFiles/runTests.dir/TestUser.cpp.obj	d1f76f4549e0aca9
+7963	8809	7279244040579338	CMakeFiles/core.dir/Item.cpp.obj	b6f1355bc6b90bd7
+7940	9012	7279244042578322	CMakeFiles/core.dir/ObjectNumberUpdate.cpp.obj	2151e607ca6917d0
+4842	9570	7279244048183531	CMakeFiles/untitled_18.dir/main.cpp.obj	1748c470140fbbb9
+7951	9604	7279244048520576	CMakeFiles/core.dir/User.cpp.obj	2b18d8d248593bb9
+9605	9969	7279244052148431	libcore.a	ae46e3eaf2cbf20e
+9970	10413	7279244056505264	untitled_18.exe	5f531940670a4bbc
+8809	11344	7279244065865701	Test/lib/gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	860f1dc99cfcfc97
+953	41371	7279247426578284	Test/lib/gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	ac9d0b6beef43a4d
