@@ -86,7 +86,6 @@ TEST(ListUpdateTest, Update) {
     EXPECT_EQ(s->toBuyNumber(), 3);
     delete o;
     delete s;
-    EXPECT_EQ(s->getObs().size(), 2);
     std::cout << "ListUpdate method Update test done" << std::endl;
 
 }
