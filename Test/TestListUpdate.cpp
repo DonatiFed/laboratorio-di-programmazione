@@ -14,6 +14,7 @@ TEST(ListUpdateTest, AddObserver) {
     std::string list1name = "List1";
     ShoppingList *s = new ShoppingList(list1name);
     auto *o = new ListUpdate(s);
+    EXPECT_EQ(s->getObs().size(), 1);
     std::cout << "ListUpdate method AddObserver test done" << std::endl;
 }
 
@@ -24,6 +25,7 @@ TEST(ListUpdateTest, Update) {
     auto *o2 = new ObjectNumberUpdate(s);
     auto *o3 = new ObjectToBuyUpdate(s);
     auto *o = new ListUpdate(s);
+    EXPECT_EQ(s->getObs().size(), 3);
 
     std::string uom1 = "Kg";
     std::string categ1 = "milk";
@@ -54,18 +56,37 @@ TEST(ListUpdateTest, Update) {
     std::string categ6 = "protein foods";
     std::string name6= "eggs";
     Item eggs(uom5, -3, categ5,name5 , false);
+    EXPECT_EQ(eggs.getQuantity(), 0);
+
 
 
     s->addItem(cream);
+    EXPECT_EQ(s->totalObjectsNumber(), 1);
+    EXPECT_EQ(s->toBuyNumber(), 1);
     s->addItem(icecream);
+    EXPECT_EQ(s->totalObjectsNumber(), 2);
+    EXPECT_EQ(s->toBuyNumber(), 2);
     s->addItem(yogurt);
+    EXPECT_EQ(s->totalObjectsNumber(), 3);
+    EXPECT_EQ(s->toBuyNumber(), 3);
     s->addItem(milk);
+    EXPECT_EQ(s->totalObjectsNumber(), 4);
+    EXPECT_EQ(s->toBuyNumber(), 4);
     s->addItem(cheese);
+    EXPECT_EQ(s->totalObjectsNumber(), 5);
+    EXPECT_EQ(s->toBuyNumber(), 5);
     s->addItem(eggs);
+    EXPECT_EQ(s->totalObjectsNumber(), 6);
+    EXPECT_EQ(s->toBuyNumber(), 5);
     s->changeBought("cream", true);
+    EXPECT_EQ(s->totalObjectsNumber(),6);
+    EXPECT_EQ(s->toBuyNumber(), 4);
     s->removeItem("yogurt");
+    EXPECT_EQ(s->totalObjectsNumber(), 5);
+    EXPECT_EQ(s->toBuyNumber(), 3);
     delete o;
     delete s;
+    EXPECT_EQ(s->getObs().size(), 2);
     std::cout << "ListUpdate method Update test done" << std::endl;
 
 }

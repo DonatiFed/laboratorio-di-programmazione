@@ -11,6 +11,9 @@ TEST(ListTest, Constructor) {
     std::cout<< "List Constructor test" << std::endl;
     std::string list1name = "List1";
     ShoppingList l(list1name);
+    EXPECT_EQ(l.getName(), list1name);
+    EXPECT_EQ(l.totalObjectsNumber(), 0);
+    EXPECT_EQ(l.toBuyNumber(), 0);
     std::cout<< "List Constructor test done" << std::endl;
 }
 
@@ -22,7 +25,10 @@ TEST(ListTest, AddObject) {
     std::string categ = "milk";
     std::string name = "icecream";
     l.addItem(uom, 2, categ, name, false);
+    EXPECT_EQ(l.totalObjectsNumber(), 1);
+    EXPECT_EQ(l.toBuyNumber(), 1);
     std::cout << "List method AddObject test done" << std::endl;
+
 }
 
 TEST(ListTest, RemoveObject) {
@@ -34,6 +40,8 @@ TEST(ListTest, RemoveObject) {
     std::string name = "yogurt";
     l.addItem(uom, 2, categ, name, false);
     l.removeItem("yogurt");
+    EXPECT_EQ(l.totalObjectsNumber(), 0);
+    EXPECT_EQ(l.toBuyNumber(), 0);
     std::cout << "List method RemoveObject test done" << std::endl;
 }
 
@@ -47,10 +55,12 @@ TEST(ListTest, ChangeBought) {
     Item i(uom, 2, categ, name, false);
     l.addItem(i);
     l.changeBought(i.getName(), true);
+    EXPECT_EQ(l.totalObjectsNumber(), 1);
+    EXPECT_EQ(l.toBuyNumber(), 0);
     std::cout << "List method ChangeBought test done" << std::endl;
 }
 
-TEST(ListTest, totelementseist) {
+TEST(ListTest, totelementsList) {
     std::cout << "List method totElementsList test" << std::endl;
     std::string list1name = "List1";
     ShoppingList l(list1name);
@@ -59,6 +69,7 @@ TEST(ListTest, totelementseist) {
     std::string name = "milk";
     l.addItem(uom, 2, categ, name, false);
     l.totElementsList();
+    EXPECT_EQ(l.totElementsList(), "\nList1 2 Kg milk");
     std::cout << "List method totElementsList test done" << std::endl;
 }
 
